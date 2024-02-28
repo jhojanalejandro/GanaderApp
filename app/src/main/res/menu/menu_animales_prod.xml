@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/action_atras_anml_prod"
+    android:title="@string/hint_search"
+    android:icon="@drawable/ic_regreso"
+    app:showAsAction="always"/>
+    <item
+        android:title="@string/hint_search"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always">
+    <menu>
+
+        <item android:id="@+id/action_ir_menu_admin_anml_prod"
+            android:title="@string/menu_administracion"
+            android:icon="@drawable/ic_administrador_web"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+        <item android:id="@+id/action_ir_insumos_anml_prod"
+            android:title="Menu Isumos"
+            android:icon="@drawable/ic_ir"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+        <item android:id="@+id/action_anml_prod_volver_inicio"
+            android:title="@string/action_volver_inicio"
+            android:icon="@drawable/ic_volver"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+
+        <item android:id="@+id/action_cerrar_sesion_anml_prod"
+            android:title="@string/cerrar_sesion"
+            android:icon="@drawable/ic_salida"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+    </menu>
+
+</item>
+
+    </menu>

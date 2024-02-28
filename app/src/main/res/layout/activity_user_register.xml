@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo_other_color"
+    tools:context=".views.manejo_usuarios_view.User_Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_experiencia_user"
+                android:layout_width="232dp"
+                android:layout_height="171dp"
+                android:layout_marginTop="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.553"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008"
+                app:srcCompat="@drawable/ic_usuario" />
+
+            <TextView
+                android:id="@+id/tv_tpo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:text="Tipo Usuario"
+                android:textColor="@color/azul"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_experiencia_user" />
+
+            <Spinner
+                android:id="@+id/spinner_personal_tipo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="18sp"
+                android:autofillHints="TIPO USUAIO"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tpo_usuario" />
+
+            <LinearLayout
+                android:id="@+id/ln_id_propietario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_personal_tipo_usuario">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_candado" />
+
+                <EditText
+                    android:id="@+id/edt_id_propietario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_codigo"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_nombre_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_id_propietario">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_nota" />
+
+                <EditText
+                    android:id="@+id/edt_r_nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_name_full"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_nombre_de_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_nombre_usuario">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_de_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <EditText
+                    android:id="@+id/edt_nombre_de_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_name"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_cedula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_nombre_de_usuario">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_cedula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_cedula_de_identidad_con_foto_de_mujer" />
+
+                <EditText
+                    android:id="@+id/edt_cedula_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_cedula"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_telefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_cedula">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_silueta_de_receptor_de_telefono" />
+
+                <EditText
+                    android:id="@+id/edt_telelefono_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_telefono"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_telefono">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_gmail" />
+
+                <EditText
+                    android:id="@+id/edt_email_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_contraseña"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_email">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_contraseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_key" />
+
+                <EditText
+                    android:id="@+id/edt_contraseña_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_contraseña"
+                    android:inputType="textPassword"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cancelar_r_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@android:color/transparent"
+                android:text="@string/cancelar"
+                app:layout_constraintEnd_toStartOf="@+id/btn_registro_usuario"
+                app:layout_constraintHorizontal_bias="0.434"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch_politicas" />
+
+            <Button
+                android:id="@+id/btn_registro_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@android:color/transparent"
+                android:text="@string/enviar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.836"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch_politicas" />
+
+
+            <Switch
+                android:id="@+id/switch_politicas"
+                android:layout_width="250sp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/borde"
+                android:gravity="center"
+                android:text="@string/politicas"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_contraseña"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

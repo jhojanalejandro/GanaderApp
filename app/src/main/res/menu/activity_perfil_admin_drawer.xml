@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view_p_admin">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datos_finca_p_admin"
+            android:icon="@drawable/ic_inicio_dos"
+            android:title="@string/menu_gallery_p_admin" />
+        <item
+            android:id="@+id/nav_analizis_p_admin"
+            android:icon="@drawable/ic_graphic"
+            android:title="@string/menu_analizis_p_admin" />
+        <item
+            android:id="@+id/nav_estadisticas_p_admin"
+            android:icon="@drawable/ic_earnings"
+            android:title="@string/menu_estadisticas_p_admin" />
+
+        <item
+            android:id="@+id/nav_promedio_p_admin"
+            android:icon="@drawable/ic_administracion"
+            android:title="@string/menu_tools_p_admin" />
+
+        <item
+            android:id="@+id/nav_produccion_diaria_p_admin"
+            android:icon="@drawable/ic_cabeza_de_toro_frontal"
+            android:title="@string/menu_produccion_diaria_p_admin" />
+    </group>
+
+    <item android:title="INFORMACION">
+        <menu>
+
+            <item
+                android:id="@+id/nav_palpacion_p_admin"
+                android:icon="@drawable/ic_veterinario"
+                android:title="@string/menu_tareas_p_admin" />
+
+            <item
+                android:id="@+id/nav_personal_p_admin"
+                android:icon="@drawable/ic_farmer"
+                android:title="@string/menu_share_p_admin" />
+            <item
+                android:id="@+id/nav_lista_general_animales_p_admin"
+                android:icon="@drawable/ic_cara_vaca"
+                android:title="@string/menu_lista_genral_animales" />
+
+        </menu>
+    </item>
+
+</menu>

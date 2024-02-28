@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.manejo_subastas_view.Registro_Subastas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <TextView
+                android:id="@+id/tv_foto"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text=" ELEGIR FOTOS Y VIDEO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_r_upload_foto_animal_sub"
+                android:layout_width="111sp"
+                android:layout_height="98dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/ic_camara"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_foto" />
+
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/ic_reproductor_de_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_r_upload_foto_animal_sub"
+                app:layout_constraintTop_toBottomOf="@+id/tv_foto" />
+
+
+            <TextView
+                android:id="@+id/tv_tipo_tiempo_sub"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text=" TIPO SUBASTA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/tv_sub_r_plu_sing"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_r_upload_foto_animal_sub" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_tipo_tiempo"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tipo_tiempo_sub">
+
+
+                <RadioGroup
+                    android:id="@+id/rdg_sub_tipo_venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/lightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_genero_animal"
+                    tools:ignore="MissingConstraints,NotSibling">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rd_sub_tipo_venta"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/appbar_margin"
+                        android:text="SUBASTAR"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.257"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rd_sub_tipo_tiempo"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/appbar_margin"
+                        android:text=" HEMBRA "
+                        android:textSize="20dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.257"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rd_sub_tipo_subasta_temporal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/appbar_margin"
+                        android:text=" VENDER"
+                        android:textSize="20dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.257"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+
+                </RadioGroup>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_sub_r_plu_sing"
+                android:layout_width="190sp"
+                android:layout_height="40sp"
+                android:layout_margin="8sp"
+                android:layout_marginTop="8dp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text=" TIPO VENTA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/img_r_upload_foto_animal_sub" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_r_plu_sing"
+                android:layout_width="190sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.964"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_sub_r_plu_sing">
+
+
+                <RadioGroup
+                    android:id="@+id/rdg_tipo_cantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/lightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_genero_animal"
+                    tools:ignore="MissingConstraints,NotSibling">
+
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rd_sub_r_plu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/appbar_margin"
+                        android:text="INDIVIDUAL"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.257"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rd_sub_r_sing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/appbar_margin"
+                        android:text="COLECTIVO"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.257"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_name_register_anml"
+                android:layout_width="197dp"
+                android:layout_height="60dp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_sub_r_plu_sing">
+
+                <EditText
+                    android:id="@+id/edt_cant_animals_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_cant_anml"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="7"
+                    android:background="@color/lightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.831"
+                    app:layout_constraintStart_toEndOf="@+id/ln_sub_r_rd"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cant_animals_sub" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_fecha_inicio_sub"
+                android:layout_width="197dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toStartOf="@+id/ln_name_register_anml"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_sub_tipo_tiempo">
+
+                <EditText
+                    android:id="@+id/edt_fecha_inicio_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/fecha_inicio"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_fecha_subasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="70"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_sub_r_number_anml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_fecha_inicio_sub">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_number_anml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_dollar_currency_symbol1" />
+
+                <EditText
+                    android:id="@+id/edt_precio_animales_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_precio_anml"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_date_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_sub_r_number_anml">
+
+                <EditText
+                    android:id="@+id/edt_anml_f_nacim_animal"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/enter_fecha_termino_sub_r" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_anml_date_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:background="#00000000"
+                    app:srcCompat="@drawable/ic_calendario"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_r_descrip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_sub_date_time">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_n_p_anml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_politica" />
+
+                <EditText
+                    android:id="@+id/edt_descrip_animales_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130sp"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_descripcion_gemeral"
+                    android:inputType="textMultiLine"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_select_animales_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/appbar_margin"
+                android:background="@drawable/borde_azul_"
+                android:text="SELECCIONAR ANIMALES"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.434"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_sub_r_descrip" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_subastar_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_subasta" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

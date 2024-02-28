@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.proyecto_colombianita1.activities.MainActivity" >
+
+
+    <item
+        android:id="@+id/action_back_start_insumos"
+        android:orderInCategory="100"
+        android:title="@string/menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_regreso"
+        tools:ignore="AlwaysShowAction">
+
+    </item>
+
+    <item
+        android:orderInCategory="100"
+        android:title="menu animal"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu">
+
+        <menu>
+
+            <item android:id="@+id/action_menu_admin"
+                android:title="@string/action_menu_administrador"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_administrador_web"
+                app:showAsAction="never" />
+
+
+
+            <item android:id="@+id/action_manual_insumos"
+                android:title="@string/action_manual"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_manual"
+                app:showAsAction="never" />
+
+
+
+            <item android:id="@+id/action_volver_inicio_manejo_insumos"
+                android:title="@string/action_volver_inicio"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_volver"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_cerrar_cession_manejo_ins"
+                android:title="@string/cerrar_sesion"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_salida"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

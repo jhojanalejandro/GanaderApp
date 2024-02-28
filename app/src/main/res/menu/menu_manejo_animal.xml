@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.proyecto_colombianita1.activities.MainActivity" >
+
+    <item
+        android:id="@+id/action_atras_manejo_animal"
+        app:showAsAction="always"
+        android:title="@string/action_menu_regreso"
+        android:icon="@drawable/ic_regreso"
+        >
+
+    </item>
+
+    <item android:title="menu"
+        android:icon="@drawable/ic_menu"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+    <menu>
+
+        <item android:id="@+id/action_registro_gasto_concentrados"
+            android:title="@string/gasto_concentrados"
+            android:icon="@drawable/ic_nota"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+        <item android:id="@+id/action_lista_lote_levante"
+            android:title="@string/action_lista_lote_lev"
+            android:icon="@drawable/ic_ir"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+        <item android:id="@+id/action_mna_ir_menu_admin"
+            android:title="@string/action_perfil_admin"
+            android:icon="@drawable/ic_administrador_web"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+        <item android:id="@+id/action_cerrar_cession_manejo_a"
+            android:title="@string/cerrar_sesion"
+            android:icon="@drawable/ic_salida"
+            android:orderInCategory="100"
+            app:showAsAction="never" />
+
+    </menu>
+
+    </item>
+
+</menu>

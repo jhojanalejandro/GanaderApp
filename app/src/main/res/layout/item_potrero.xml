@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:orientation="vertical"
+        android:weightSum="10"
+
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ln_d_pto_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/ic_alambre_de_espino"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:textColor="@color/negro"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/nombre_potrero"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_item_pto_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/azul"
+                android:layout_marginTop="4sp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/nombre_potrero"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ln_d_animal_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:layout_weight="2"
+                android:background="@drawable/ic_reloj_de_arena" />
+
+            <TextView
+                android:id="@+id/tv_item_pto_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:layout_weight="2"
+                android:text="@string/estado_pto"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_tipo_pasto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/ic_cesped"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_pto_tipo_pasto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4sp"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:text="@string/tipo_pasto"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/appbar_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/enter_hect"
+                android:textColor="@color/negro"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_pto_extension"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/appbar_margin"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/azul"
+                android:layout_weight="1"
+                android:hint="@string/valor_0"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="@string/cantidad_animales"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_item_pto_cant_anml"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/azul"
+                android:textStyle="bold"
+                android:hint="@string/valor_0"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/img_bulto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/ic_cara_vaca_peque"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

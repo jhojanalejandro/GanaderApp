@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_margin="2sp">
+
+                <ImageView
+                    android:id="@+id/lista_general_imagen_animal_view_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:src="@mipmap/ic_ln"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="3"
+                    android:layout_margin="2sp">
+
+                        <TextView
+                            android:id="@+id/tv_nombre_animal_list_general"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul"
+                            android:text="@string/name"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_numero_animal_list_general"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul"
+                            android:text="@string/numero"
+                            />
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            >
+
+                <TextView
+                    android:id="@+id/tv_estado_animal_lista_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:gravity="center"
+                    android:text="@string/estado"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/tv_estado_animal_list_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textStyle="bold"
+                    android:textColor="@color/azul"
+                    android:gravity="center"
+                    android:text="@string/estado"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_margin="2sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    tools:ignore="NestedWeights">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/fecha_ingreso"
+                            android:textStyle="bold"
+                            android:textColor="@color/negro"
+                            android:layout_weight="5"
+                            tools:ignore="NestedWeights" />
+
+                        <TextView
+                            android:id="@+id/tv_fecha_ingreso"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="5"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul"
+                            android:text="@string/fecha"
+                            />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                   >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:textStyle="bold"
+                            android:textColor="@color/negro"
+                            android:text="@string/fecha_salida" />
+
+
+                        <TextView
+                            android:id="@+id/tv_fecha_salida_animal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/azul"
+                            android:layout_weight="5"
+                            android:text="@string/fecha"
+                            />
+                </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

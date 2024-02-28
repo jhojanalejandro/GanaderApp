@@ -1,0 +1,619 @@
+<resources>
+    <string name="app_name">GANDER APP</string>
+    <string name="title_activity_registro1_">Lista General</string>
+    <string name="tab_l_bovinos">Bovinos</string>
+    <string name="tab_l_equinos">Equinos</string>
+    <string name="tab_l_porcinos">Porcinos</string>
+
+    <string name="tab_lista_potreretos">Potreros</string>
+    <string name="tab_lista_insumos_vacas">Insumos de Vacas</string>
+    <string name="tab_lista_movimientos_potreros">Animales En potrero</string>
+    <string name="tab_r_venta_vacas"> Venta De Daca</string>
+    <string name="tab_lista_nueva">lista fragment</string>
+    <string name="tab_registro_">Otro</string>
+    <string name="tab_registro_general">Datos Generales</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_registrarse">Empleado</string>
+    <string name="action_r_finca">Finca</string>
+    <string name="action_tipo_prod">Tipos De Produccion</string>
+    <string name="action_salir">Cerrar Sesion</string>
+    <string name="action_volver_inicio">Volver Al Inicio</string>
+
+    <string name="action_r_emfermedad_v">Registrar Enfermedad</string>
+    <string name="action_menu_administrador">Menu Admininistracion</string>
+    <string name="action_ir_lista">lista Animales</string>
+    <string name="action_r_palpacion_v">Palpacion</string>
+    <string name="action_r_prod_v">Registrar Secado</string>
+    <string name="action_r_repro_v">Registrar Insumo del Animal</string>
+    <string name="title_activity_manejo__potreros">Manejo de Potreros</string>
+
+    <string name="secado_animal_notification_title_template">Se necesia secar algunas animales</string>
+    <string name="parto_aniamal_notification_title_template">Se necesia cuidar algunas animales para el parto </string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="secado_animal_notification_placeholder_text_template">SEÑOR GANADERO TENGA ENCUENTA QUE:
+         Hay Animales Secos En Proceso De secado que probablemente n,
+        para que no hayan dificultades en la produccion revisa tu tabla de tareas ganaderas
+    </string>
+
+    <string name="parto_animal_notification_placeholder_text_template">SEÑOR GANADERO TENGA ENCUENTA QUE:
+         Hay Animales Secos En Proceso De adelanto que probablemente necesitan de su cuidado y verificacion,
+        para que no hayan dificultades en el parto revisa tu tabla de tareas ganaderas
+    </string>
+
+    <string name="title_activity_ensayos">Ensayos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="vienbenida">VIENBENIDO</string>
+    <string name="action_general">Registro de insumos</string>
+    <string name="action_general_notificacion">Recuerda Tu secado</string>
+    <string name="action_general_notificacion_parto">Recuerda Los Parto</string>
+
+    <string name="action_registrar_emfermedad">Registrar enfermedad</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_mane_potre">Registrar Potrero</string>
+    <string name="action_r_insumo_pot">Registrar Insumo potreros</string>
+    <string name="action_r_vaca">Animal</string>
+    <string name="action_tipo_carne">Carne</string>
+    <string name="action_tipo_leche">Leche</string>
+    <string name="action_r_equino">Registrar equino</string>
+    <string name="action_r_ternera">Registrar ternera</string>
+    <string name="action_r_insumo_vacas">Insumos Animal</string>
+    <string name="action_r_insumo_general">Insumo General</string>
+    <string name="action_r_insumo_v">Insumo Del Animal</string>
+    <string name="action_r_parto_v">Parto</string>
+    <string name="action_r_calor_vaca">Calor</string>
+    <string name="action_r_vacunacion_vaca">Vacunacion</string>
+    <string name="action_r_secado_vaca">Secado</string>
+    <string name="action_lista_porero">lista De potreros</string>
+    <string name="action_r_g_adic">Registro Gastos Adicionales</string>
+    <string name="action_registrar_cliente">Registrar cliente</string>
+
+    <string name="title_activity_p_admin">Administrador</string>
+    <string name="nav_header_p_admin">Nombre</string>
+    <string name="nav_header_title_p_admin">JJ</string>
+    <string name="nav_header_subtitle_p_admin">Administrador</string>
+    <string name="nav_header_desc_p_admin">Navigation admin</string>
+
+
+    <string name="nav_header_p_animal">Nombre</string>
+    <string name="nav_header_title_p_animal">JJCOMPANYAGRO</string>
+    <string name="nav_header_subtitlep_animal">Animal</string>
+    <string name="nav_header_desc_p_animal"> Headeranimal</string>
+    <string name="action_settings_salri">Cerrar sesion</string>
+    <string name="title_activity_p_animal">Animal</string>
+
+    //menu
+    <string name="menu_home_p_admin">Inicio</string>
+    <string name="menu_gallery_p_admin">Datos de la finca</string>
+    <string name="menu_slideshow_p_admin">Estadisticas</string>
+    <string name="menu_tools_p_admin">promedio</string>
+    <string name="menu_share_p_admin">Personal</string>
+    <string name="menu_tareas_p_admin">Palpacion</string>
+
+    <string name="menu_home_perfil_animal">Secado</string>
+    <string name="menu_gallery_perfil_animal">Palpacion</string>
+    <string name="menu_slideshow_perfil_animal">Vacunacion</string>
+    <string name="menu_tools_perfil_animal">Parto</string>
+    <string name="menu_share_perfil_animal">Enfermedad</string>
+    <string name="menu_send_perfil_animal">Calor</string>
+    <string name="action_registrar_novedad">Datos del animal</string>
+    <string name="action_ir_lista_animal"> lista De Animales</string>
+
+    <string name="action_movimiento_animal">Registrar Movimiento</string>
+    <string name="title_activity_perfil_propietario">Perfil Propietario</string>
+    <string name="nav_header_title">JJCOMPANYAGRO</string>
+    <string name="nav_header_subtitle">propietario</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home_p_prop">Inicio</string>
+    <string name="menu_gallery_p_prop">Estadisticas</string>
+    <string name="menu_slideshow_p_prop">Promedios</string>
+    <string name="menu_tools_p_prop">Estadisticas</string>
+    <string name="menu_analizis_p_prop">Analizis Gneral</string>
+    <string name="menu_share_p_prop">Personal</string>
+    <string name="menu_send_p_prop">Base de datos General</string>
+    <string name="action_menu_prop_p_prop">Menu propietario</string>
+    <string name="title_activity_lista_potreros">Lista_potreros</string>
+    <string name="action_r_movimiento">Agregar Animal</string>
+    <string name="action_r_movimiento_lote_pto">Agregar Lote</string>
+    <string name="action_menu_P_prop">Menu Propietario</string>
+    <string name="action_menu_p_admin">Menu Administrador</string>
+    <string name="action_menu_regreso">Regresar</string>
+
+    <string name="title_activity_detalle_cliente">Detalle cliente</string>
+    <string name="action_r_admin">Registrar Administrador</string>
+    <string name="title_activity_detalle_animal">Detalle Animal</string>
+    <string name="action_medida_leche">Medir leche</string>
+    <string name="action_registrar_pago_leche">Registrar pago de Leche</string>
+    <string name="menu_precios_p_admin">Precios</string>
+    <string name="menu_inicio_perfil_animal">Inicio</string>
+    <string name="menu_inicio_p_animal_m">Inicio</string>
+    <string name="menu_enfermedad_p_animal_m">Enfermedades</string>
+    <string name="menu_vacunacion_p_animal_m">Vacunacion</string>
+    <string name="menu_tools_p_animal_m">Produccion</string>
+    <string name="menu_share_p_animal_m">Reproduccion</string>
+    <string name="menu_send_p_animal_m">Otro</string>
+    <string name="title_activity_perfil_animal_macho">Perfil Animal Macho</string>
+    <string name="nav_header_desc_p_animal_m">Perfil Macho</string>
+    <string name="nav_header_title_p_animal_m">Nombre</string>
+    <string name="nav_header_subtitle_p_animal_m">JJCOMPANYAGRO</string>
+    <string name="tab_r_toro">Toros</string>
+    <string name="tab_terneros">Terneros</string>
+    <string name="title_activity_detalle_insumos">Detalle Insumos</string>
+    <string name="title_activity_control_agricola">Control Agricola</string>
+    <string name="menu_produccion_leche_perfil_animal">PRODUCCION LECHERA</string>
+    <string name="menu_produccion_pesaje_perfil_animal">PRODUCCION PESAJE </string>
+    <string name="title_activity_control_insumos">Control Insumos</string>
+    <string name="tab_c_insumos_droga">Medicamento</string>
+    <string name="tab_c_insumo_herramienta">Herramientas</string>
+    <string name="tab_c_insumo_concentrados">Concentrados</string>
+    <string name="action_r_prop">Registrar Propietario</string>
+    <string name="action_vacunacion_animal_m">Registrar Vacunacion</string>
+    <string name="action_enfermedad_m">Enfermedad</string>
+    <string name="action_r_insumo_m">Registrar Insumo</string>
+    <string name="action_lista_lote_lev">Animales de produccion</string>
+    <string name="action_lote_produccion">Animales de produccion</string>
+    <string name="menu_ganado_levante_p_admin">Ganado de levante</string>
+    <string name="menu_ganado_produccion_p_admin">Ganado de levante</string>
+    <string name="menu_estadisticas_p_admin">Estadisticas</string>
+    <string name="menu_analizis_p_admin">Analizis</string>
+    <string name="title_activity_manejo_animales_levante">Lista Animales</string>
+    <string name="tab_terneras_01">terneras 01</string>
+    <string name="tab_terneras_02">terneras 02</string>
+    <string name="tab_terneras_03">terneras 03</string>
+    <string name="tab_horras">Horras</string>
+    <string name="tab_lote_01">Lote 01</string>
+    <string name="tab_lote_02">Lote 02</string>
+    <string name="tab_lote_03">Lote 03</string>
+    <string name="tab_lote_04">Lote 04</string>
+    <string name="tab_lote_c1">Terneras 01</string>
+    <string name="tab_lote_c2">Terneras 02</string>
+    <string name="tab_lote_c3">Terneras 03</string>
+    <string name="tab_lote_n1">novillos(a) 01</string>
+    <string name="tab_lote_n2">novillos(a) 02</string>
+    <string name="tab_lote_n3">novillos(a) 03</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="action_salida_mvto">Salida Del Lote</string>
+    <string name="menu_produccion_diaria_p_admin">Produccion Animal</string>
+    <string name="action_r_leche">Produccion Diaria</string>
+    <string name="action_r_her">Registrar Herramienta</string>
+    <string name="action_animales_prod">Animales de Produccion</string>
+    <string name="action_r_efmd_vaca">Enfermedad</string>
+    <string name="title_activity_detalle_calor">Detalle_calor</string>
+    <string name="title_activity_detalle_parto">Detalle_parto</string>
+    <string name="action_detalle_aniaml">Editar Datos Del Animal</string>
+    <string name="title_activity_detalle_enfermedad">Detalle Enfermedad</string>
+    <string name="action_perfil_admin">Menu Administración</string>
+    <string name="action_prueba_animal_m">prueba registro</string>
+    <string name="hint_search">buscar</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="action_registrar_tarea">Registrar Tarea</string>
+    <string name="channel_description_secado">channel Secado</string>
+    <string name="channel_description_parto">channel Parto</string>
+    <string name="title_activity_detalle__secado">Detalle_Secado</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tipo_levante"> Levante </string>
+    <string name="tipo_ceva"> Ceva </string>
+    <string name="tipo_leche"> Leche </string>
+    <string name="tipo_carne"> Carne </string>
+    <string name="action_manual">Manual De Uso</string>
+    <string name="lista_personas_titulo">LISTA  REGISTROS</string>
+    <string name="enter_password"> CONTRASEÑA </string>
+    <string name="enter_email"> CORREO </string>
+    <string name="enter_email_login"> CORREO O NOMBRE USUAIO </string>
+    <string name="enter_name">NOMBRE DE USUARIO</string>
+    <string name="enter_cedula">CEDULA</string>
+    <string name="enter_telefono">TELEFONO</string>
+    <string name="enter_contraseña">CONTRASEÑA</string>
+    <string name="enter_name_full">NOMBRE COMPLETO</string>
+    <string name="enter_name_pto">NOMBRE POTRERO</string>
+    <string name="enter_obs">OBSERVACIONES</string>
+    <string name="enter_hect">HECTAREAS</string>
+    <string name="enter_name_anml">NOMBRE ANIMAL</string>
+    <string name="enter_number_anml">IDENTIFICADOR </string>
+    <string name="enter_name_father_anml">NOMBRE PADRE</string>
+    <string name="enter_name_mother_anml">NOMBRE MADRE</string>
+    <string name="enter_peso_anml">PESO ANIMAL</string>
+    <string name="enter_precio_anml">PRECIO:</string>
+    <string name="fecha_nacimiento">FECHA NACIMIENTO</string>
+    <string name="enter_name_ins">NOMBRE INSUMO</string>
+    <string name="enter_medida_anml">CANTIDAD LECHE</string>
+    <string name="enter_result_leche">RESULTADO AM</string>
+    <string name="enter_result_peso">PESO ANTERIOR</string>
+    <string name="enter_trat">TRATAMIENTO</string>
+    <string name="enter_name_bull">NOMBRE TORO</string>
+    <string name="enter_cant_droga">CANTIDAD DROGA</string>
+    <string name="enter_name_vet">VETERINARIO</string>
+    <string name="enter_event">EVENTO</string>
+    <string name="enter_number_cria">IDENTIFICADOR CRIA</string>
+    <string name="enter_number_part">NUMERO PARTO</string>
+    <string name="enter_name_finca">NOMBRE DE LA FINCA</string>
+    <string name="enter_extension">EXTENSION</string>
+    <string name="enter_ubicacion">UBICACION</string>
+    <string name="enter_precio_unidad">PRECIO POR UNIDAD</string>
+    <string name="enter_cant_insumo">CANTIDAD INSUMO</string>
+    <string name="enter_drog">DROGA</string>
+    <string name="perfil_subastas">SUBASTAR</string>
+    <string name="enter_raza_anml">RAZA</string>
+    <string name="enter_razas_anml">RAZAS</string>
+    <string name="enter_puja">PUJAR</string>
+    <string name="enter_f_nacimiento">FECHA  NACIMIENTO</string>
+    <string name="action_add_anml_sub">AGREGAR ANIMALES</string>
+    <string name="action_lista_subasta">SUBASTAS</string>
+    <string name="quejas_reclamos">Quejas Y Reclamos</string>
+    <string name="enter_f_public_sub">Fecha Publicacion</string>
+    <string name="enter_descripcion">DESCRIPCION</string>
+    <string name="enter_cant_anml">CANTIDAD</string>
+    <string name="enter_fecha_termino_sub_r">FECHA TERMINO</string>
+    <string name="estado_pto">ESTADO</string>
+    <string name="dias_rep">Dias Reposo</string>
+    <string name="tipo_pasto">Tipo De Pasto</string>
+    <string name="nombre_potrero">NOMBRE POTRERO</string>
+    <string name="valor_0">0</string>
+    <string name="buscar_potrero">Buscar Potrero</string>
+    <string name="nacido_noregistrado">Nacidos No Registrado</string>
+    <string name="tipo_subasta">TIPO DE SUBASTA</string>
+    <string name="enter_f_inicio">FECHA INICIO</string>
+    <string name="enter_f_final">FECHA TERMINO</string>
+    <string name="imagen_sub_01">imagen_sud_01</string>
+    <string name="enter_generos">GENEROS</string>
+    <string name="enter_nit">NIT CAMARA Y COMERCIO</string>
+    <string name="action_r_animals_sub">SUBASTAR ANIMALES</string>
+    <string name="agro_market">Agro Market</string>
+    <string name="enter_cant_herra">CANTIDAD HERRAMIENTA</string>
+    <string name="enter_name_herra">NOMBRE</string>
+    <string name="cant_bovinos"> BOVINOS DULTOS</string>
+    <string name="cero">0</string>
+    <string name="nacidos">NACIDOS</string>
+    <string name="trasladados">TRASLADADOS</string>
+    <string name="cantidad_crias">CANTIDAD CRIAS</string>
+    <string name="total_animales">TOTAL ANIMALES</string>
+    <string name="animal_muerto">MUERTOS</string>
+    <string name="muerto">MUERTOS</string>
+
+    <string name="abortos">ABORTOS</string>
+    <string name="aborto">aborto</string>
+    <string name="real">real</string>
+    <string name="fecha_pesaje">FECHA PESAJE</string>
+    <string name="kilos_pesados">KILOS PESADOS</string>
+    <string name="animales_pesados">ANIMALES PESADOS</string>
+    <string name="animales_pesados_lote1">ANIMALES PESADOS LOTE 01</string>
+    <string name="animales_medidos">ANIMALES MEDIDOS</string>
+    <string name="terneras">TERNERAS</string>
+    <string name="novilas">NOVILLAS</string>
+    <string name="buscar_animal">Buscar Animal</string>
+    <string name="estado">ESTADO</string>
+    <string name="fecha_produccion_pesaje">FECHA PESAJE</string>
+    <string name="fecha_produccion_medida">FECHA MEDIDA</string>
+    <string name="ganacia">GANANCIAS</string>
+    <string name="gasto">GASTOS MES</string>
+    <string name="promedio_produccion_leche">PROMEDIO PRODUCCION ANIMAL</string>
+    <string name="promedio_leche">PROMEDIO  LECHE</string>
+    <string name="promedio_carne">PROMEDIO PESO</string>
+    <string name="promedio_produccion_carne">PROMEDIO PRODUCCION PESO</string>
+    <string name="estado_leche">ESTADO MEDIDA</string>
+    <string name="estado_pesaje">ESTADO PESAJE</string>
+    <string name="litros_medidos">LITROS MEDIDOS</string>
+    <string name="litros">LITROS</string>
+    <string name="ganacia_mes">GANANCIAS MES</string>
+    <string name="menu">menu</string>
+    <string name="terminoscondiciones">Terminos Y Condiciones</string>
+    <string name="cant_animales_lote01">ANIMALES LOTE 01</string>
+    <string name="cant_animales_lote02">ANIMALES LOTE 02</string>
+    <string name="cant_terneras03">TERNERAS LOTE 03</string>
+    <string name="animales_en_prod">AINIMALES EN PRODUCCION</string>
+    <string name="fecha_medida">FECHA MEDIDA</string>
+    <string name="promedio_duccion">PROMEDIO PRODUCCION</string>
+    <string name="dias_pesaje">DIAS PESAJE DE LECHE</string>
+    <string name="cant_animales_lote03">ANIMALES LOTE 03</string>
+    <string name="cant_animales_lote04">ANIMALES LOTE 04</string>
+    <string name="cant_animales_loten1">NOVILLOS (A) 01</string>
+    <string name="cant_animales_loten2">NOVILLOS (A) 02</string>
+    <string name="cant_animales_horras">ANIMALES LOTE HORRAS</string>
+    <string name="tipo_produccion">TIPO PRODUCCION</string>
+    <string name="etapa_pesaje">ETAPA PESAJE</string>
+    <string name="kilos_producidos">KILOS PRODUCIDOS</string>
+    <string name="litros_producidos">LITROS PRODUCIDOS</string>
+    <string name="comprados">COMPRADOS</string>
+    <string name="cant_animales_loten3">NOVILLOS  (A) 03</string>
+    <string name="cant_animales_lotet1">TERNERAS 01</string>
+    <string name="cant_animales_lotet2">TERNERAS 02</string>
+    <string name="enter_fecha_produccion">FECHA PRODUCCION</string>
+    <string name="enter_cant_leche">CANTIDAD DE LECHE</string>
+    <string name="enter_cant_kilos">CANTIDAD DE KILOS</string>
+    <string name="numero_cria">NUMERO CRIA</string>
+    <string name="tipo_vacunacion">TIPO VACUNA</string>
+    <string name="enter_result_real">Resultado Real</string>
+    <string name="enter_genero">GENERO</string>
+    <string name="enter_nombre_ternera">NOMBRE ANIMAL (opcional)</string>
+    <string name="fecha_produccion">FECHA PRODUCION</string>
+    <string name="procedencia_herra">TIPO PROCEDENCIA</string>
+    <string name="title_activity_detalle__animal">Detalle_Animal</string>
+    <string name="fecha">FECHA</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="potrero">POTRERO</string>
+    <string name="fincas">FINCAS</string>
+    <string name="enter_codigo">CODIGO PROPIETARIO</string>
+    <string name="menu_main">menu main</string>
+    <string name="registrar_finca">REGISTRO FINCA</string>
+    <string name="cant_animales_equines">CANTIDAD EQUINOS</string>
+    <string name="cant_animales_novillos">CANTIDAD NOVILLOS (A)</string>
+    <string name="cant_toros">CANTIDAD TOROS</string>
+    <string name="animales">ANIMALES</string>
+    <string name="gastos">GASTOS</string>
+    <string name="promedio_actual">PROMEDIO ACTUAL</string>
+    <string name="promedio_pasado">PROMEDIO PASADO</string>
+    <string name="nacido_muertos">NACIDOS MUERTOS</string>
+    <string name="animales_vendidos">ANIMAES VENDIDOS</string>
+    <string name="animales_ingresados">ANIMALES INGRESADOS</string>
+    <string name="inicio">INICIO</string>
+    <string name="produccion">PRODUCCION</string>
+    <string name="secado">SECADO</string>
+    <string name="insumos">INSUMOS</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="cantidad">CANTIDAD</string>
+    <string name="enter_insimos">LISTA DE DROGA</string>
+    <string name="title_activity_inicio__ganderapp">GanadeR App</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_itemdetallesubasta_list">Items</string>
+    <string name="title_itemdetallesubasta_detail">Item_detalle_subasta Detail</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="action_copiar_codigo">Copiar Codigo</string>
+    <string name="title_detallepotrero_list">detalle_potrero</string>
+    <string name="title_detallepotrero_detail">Detalle_Potrero Detail</string>
+    <string name="title_activity_detalle__potero">ScrollingActivity</string>
+    <string name="lotes">LOTES</string>
+    <string name="lote">LOTE</string>
+    <string name="ingreso_animal">INGRESO ANIMAL</string>
+    <string name="agregar_animal_indiviual">AGREGAR ANIMAL INDIVIDUAL</string>
+    <string name="promedio_leche_diario">PROMEDIO DIARIO</string>
+    <string name="leche_producida_mes">LECHE PRODUCIDA</string>
+    <string name="estado_productivo_carne">ESTADO PRODUCTIVO PESO</string>
+    <string name="estado_productivo_leche">ESTADO PRODUCTIVO LECHE</string>
+    <string name="produccion_alta_medida">LECHE ALTA</string>
+    <string name="produccion_baja_medida">LECHE BAJA</string>
+    <string name="produccion_alta_pesaje">PESAJE ALTA</string>
+    <string name="produccion_baja_pesaje">PESAJE BAJA</string>
+    <string name="enter_cant_animales_sub">CANTIDAD ANIMALES  A SUBASTAR</string>
+    <string name="numero">NUMERO ANIMAL</string>
+    <string name="sacar_animal">SALIDA DE POTRERO</string>
+    <string name="ingreso">INGRESO</string>
+    <string name="registro">REGISTRO</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="agregar_animal">AGREGAR ANIMAL</string>
+    <string name="subastas">SUBASTAS</string>
+    <string name="menu_lista_animales">Lista General Animales</string>
+    <string name="menu_lista_genral_animales">Lista General Animales</string>
+    <string name="cantidad_animales">ANIMALES EN POTRERO</string>
+    <string name="gastos_adicionales">Gastos Adicionales</string>
+    <string name="ganacia_adicionales">Ganacias Adicionales</string>
+    <string name="fecha_ingreso">Fecha Ingreso</string>
+    <string name="name">NOMBRE</string>
+    <string name="fecha_salida">FECHA SALIDA</string>
+    <string name="registrar_animal">REGISTRAR ANIMAL</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="menu_administracion">Menu Administrcion</string>
+    <string name="nivel_acceso">NIVEL DE ACCESO</string>
+    <string name="precio_pago_mes">PAGO MENSUAL</string>
+    <string name="tipo_usuario">TIPO USUARIO</string>
+    <string name="actualizar_datos">ACTUALIZAR DATOS</string>
+    <string name="cant_dias_medidos">DIAS MEDIDOS</string>
+    <string name="peso_nacimniento">PESO NACIMIENTO</string>
+    <string name="fecha_destete">FECHA DESTETE</string>
+    <string name="peso_destete">PESO DESTETE</string>
+    <string name="peso_ingreso">PESO INGRESO</string>
+    <string name="peso_salida">PESO SALIDA</string>
+    <string name="fecha_presalida">ANTES DE VENDER</string>
+    <string name="peso_presalida">ANTES DE VENDER</string>
+    <string name="fecha_posingreso">FECHA POSINGRESO</string>
+    <string name="peso_ganado_mes">PESO GANADO</string>
+    <string name="peso_posinngreso">PESO POSINGRESO</string>
+    <string name="precio_pago_leche">PRECIO POR LITRO DE LECHE</string>
+    <string name="municipio">MUNICIPIO O CORREGIMIENTO</string>
+    <string name="enter_vereda">VEREDA</string>
+    <string name="concentrados">CONCENTRADOS</string>
+    <string name="gasto_concentrados">Gasto Concentrado</string>
+    <string name="fecha_inicio">FECHA INICIO</string>
+    <string name="enter_descripcion_gemeral">DESCRIPCION GENERAL DE LOS ANIMALES A VENDER:
+        TALES COMO GENROS,PESO, U OTROS ASPECTOS QUE CREA IMPORTANTEs</string>
+    <string name="enter_departamento">DEPARTAMENTO</string>
+    <string name="enter_municipio">MUNICIPIO</string>
+    <string name="politicas">VEY Y ACEPTAR POLITICAS DE PRIVACIDAD</string>
+    <string name="politicas_deprivacidad">
+TÉRMINOS Y CONDICIONES
+
+Encuentra aquí las políticas de privacidad.
+ROGAMOS LEAS ATENTAMENTE ESTAS CONDICIONES DE USUARIO ANTES DE DESCARGAR LA APLICACIÓN O UTILIZAR NUESTRO SERVICIO.
+Ganader App, en adelante "LA PLATAFORMA', es una marca de Buenos Hábitos S.A.S, en adelante 'LA EMPRESA'.
+LA EMPRESA y su Sitio Web y/o aplicación móvil prestan sus servicios (más adelante descritos) a través de su aplicación móvil (GANADER APP); servicios relacionados (colectivamente, tales servicios incluyen cualquier actualización, nuevas características o nuevas aplicaciones). Los servicios de LA PLATAFORMA están sujetos a lo contenido en estos Términos y Condiciones.
+En caso de que estos términos y condiciones no sean aceptados, por favor no haga uso del servicio o herramientas que proveemos ya que estos están restringidos únicamente a quienes se comprometen a respetar los lineamientos que acá se mencionan.
+LA EMPRESA se exime de toda responsabilidad en el caso de que los clientes (en adelante y para efectos de este documento “USUARIO o USUARIOS”) utilicen los servicios sin consentir a los Términos y Condiciones y se reserva la facultad de tomar las medidas legales pertinentes en estos casos.
+LA EMPRESA tiene la facultad y autonomía de modificar estos Términos y Condiciones de manera unilateral, en cualquier moment y no se hace responsable por los perjuicios que dichas modificaciones puedan causar a los USUARIOS desinformados ya que es exclusiva responsabilidad de los USUARIOS revisar los Términos y Condiciones de manera periódica para enterarse de las últimas actualizaciones.
+1. ACCESO Y USO DEL SERVICIO.
+Descripción del Servicio: LA PLATAFORMA es una aplicación que pone a disposición de los USUARIOS el servicio de “CONTROL GANADERO” (en adelante y para efectos del presente documento “PRODUCTOS Y SERVICIOS“). Los USUARIOS de LA PLATAFORMA podrán acceder a los servicios ofrecidos a través de su Sitio Web y/o aplicación móvil.
+LA PLATAFORMA no presta servicios médicos. Las valoraciones médicas son simples aproximaciones.
+LA EMPRESA autoriza a sus usuarios a consultar, revisar y usar su Sitio Web y/o aplicación móvil únicamente para su uso personal y no comercial. El contenido de esta plataforma, incluyendo pero sin limitarse a los textos, gráficos, imágenes, logotipos, íconos, software y cualquier otro contenido, está protegido bajo las leyes colombianas de derechos de autor propiedad industrial y otras leyes aplicables. Todo el contenido es propiedad de la sociedad. El uso no autorizado del contenido puede constituir una violación de las leyes colombianas o extranjeras sobre derechos de autor, propiedad industrial u otras leyes. Ningún USUARIO podrá vender o modificar el contenido, ni usarlo o distribuirlo públicamente para propósitos comerciales.
+2. REGISTRO EN LA PLATAFORMA.
+Con el fin de acceder a todos los PRODUCTOS Y SERVICIOS ofrecidos por LA PLATAFORMA, el USUARIO deberá completar un registro en el cual se creará un nombre de usuario y contraseña. El nombre de usuario y la contraseña que el USUARIO proporciona son sus credenciales para acceder al Sitio Web y/o aplicación móvil. Los USUARIOS no pueden tener más de un conjunto activo de credenciales. Además, a los usuarios se les prohíbe vender, negociar o ceder de otra manera sus credenciales en LA PLATAFORMA a otra persona. Si el USUARIO escoge registrarse, a su vez, acepta los presentes Términos y Condiciones y se compromete a suministrar información actual, completa y verídica sobre él o ella. Toda la información personal suministrada por el USUARIO a LA PLATAFORMA, se regirá por las políticas de privacidad de LA PLATAFORMA.
+LA EMPRESA se reserva el derecho de suspender o cancelar su cuenta y negarle el uso presente o futuro del Sitio Web y/o aplicación móvil (o cualquier porción del mismo) en caso de sospechar que el USUARIO ha proporcionado información que sea falsa, inexacta, desactualizada o incompleta (o que se ha convertido en falsa, inexacta, no actualizada o incompleta).
+El USUARIO que no haya cumplido la mayoría de edad podrá acceder a la Sitio Web y/o aplicación móvil, sin embargo, solo los USUARIOS mayores de edad podrán completar el registro para acceder a los servicios. LA EMPRESA NO se responsabiliza por la certeza de los datos personales provistos por sus USUARIOS. Los USUARIOS garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia y autenticidad de los Datos Personales ingresados.
+LA EMPRESA se reserva el derecho de solicitar algún comprobante y/o dato adicional a efectos de corroborar los datos personales, así como de suspender temporal o definitivamente a aquellos USUARIOS cuyos datos no hayan podido ser confirmados. En estos casos de inhabilitación, se dará de baja la cuenta personal del USUARIO, sin que ello genere algún derecho a resarcimiento o reembolso de los dineros abonados a la cuenta.
+3. CAPACIDAD.
+Los servicios ofrecidos por LA PLATAFORMA a través del Sitio Web y/o aplicación móvil sólo están disponibles para los USUARIOS que tengan capacidad legal para contratar. No podrán acceder a los servicios las personas que no tengan esa capacidad, los menores de edad o los USUARIOS de LA PLATAFORMA que hayan sido suspendidos temporalmente o inhabilitados definitivamente.
+En caso de que el USUARIO sea una persona jurídica, el USUARIO manifiesta que cuenta con capacidad para contratar a nombre de tal entidad y de obligar a la misma en los términos de este Acuerdo.
+4. CUENTA CLAVES Y SEGURIDAD.
+El USUARIO es el ÚNICO responsable de mantener la confidencialidad de su contraseña, clave y cuenta. De conformidad con lo anterior, el USUARIO es el ÚNICO responsable por todas las actividades, solicitudes o manejo de información que ocurran en su cuenta.
+El USUARIO reconoce y acepta que; (i). Solo podrá crear una cuenta; (ii). notificará inmediatamente a LA PLATAFORMA de cualquier uso no autorizado de su cuenta y/o clave o cualquier otra violación de la seguridad, y; (iii). Se asegurará de cerrar la sesión cada vez que finalice su acceso a la aplicación.
+LA EMPRESA no será responsable por cualquier pérdida o daño que se llegue a presentar a causa del incumplimiento de esta sección.
+En caso de que LA EMPRESA detecte distintas cuentas que contengan datos coincidentes o relacionados, podrá cancelar, suspender o inhabilitarlas, sin que esto genere ningún derecho a favor del usuario de reparación o reembolso de los dineros abonados.
+5. MODIFICACIONES AL SERVICIO.
+Sin previo aviso y siempre y cuando esto no implique una afectación de los derechos adquiridos por el USUARIO, los presentes Términos y Condiciones podrán ser modificados total o parcialmente por los siguientes motivos: (i) Variaciones de las características de LA PLATAFORMA; (ii) Cambios tecnológicos que afecten el (los) servicio (s); (iii) Variaciones de las condiciones económicas existentes en el momento de la contratación del servicio, y; (iv) Evolución del mercado. Las características del servicio podrán verse modificadas con la finalidad de adaptarlas a su evolución técnica, cuando existan razones para ello.
+LA EMPRESA podrá realizar cualquier mejora técnica que permita incorporar un mayor número de prestaciones al servicio. Dichas modificaciones surtirán sus efectos inmediatamente, una vez que se hayan publicado en la página web o mediante notificación directa al USUARIO por e-mail, a la dirección electrónica informada al momento de la aceptación de los Términos y Condiciones, la cual se enviará con cinco (5) días de anticipación a la efectiva modificación. En caso de que el USUARIO no esté de acuerdo con la modificación de las condiciones, deberá informarlo por correo electrónico para darlo de baja en la prestación del servicio.
+El USUARIO podrá acceder, imprimir, descargar y guardar los Términos y Condiciones legales así como los demás textos legales en todo momento.
+Asimismo, LA EMPRESA se reserva la posibilidad de modificar sin previo aviso el diseño, presentación y/o configuración del Sitio Web y/o aplicación móvil, así como algunos o todos los servicios, y/o añadir servicios nuevos.
+En cualquier caso, LA EMPRESA se reserva el derecho de denegar el acceso al Sitio Web y/o aplicación móvil, en cualquier momento y sin necesidad de previo aviso, a aquellos USUARIOS que incumplan cualesquiera de los Términos y Condiciones que le sean de aplicación.
+6. ALCANCE DE LOS SERVICIOS DE LA PLATAFORMA.
+Este Acuerdo no crea ningún contrato de sociedad, de mandato, de franquicia, o relación laboral entre LA EMPRESA, y el USUARIO. El USUARIO reconoce y acepta que LA EMPRESA no será responsable por la correspondencia o contratos que el USUARIO celebre con otros USUARIOS. LA EMPRESA hará esfuerzos razonables para garantizar la calidad del servicio prestado a fin de contribuir con la tranquilidad del USUARIO y mitigar el riesgo de incumplimiento frente al USUARIO.
+7. PRÁCTICAS GENERALES ACERCA DEL USO Y ALMACENAMIENTO DE INFORMACIÓN.
+El USUARIO reconoce y acepta que: (i) LA EMPRESA podrá establecer prácticas generales y límites concernientes al uso del Sitio Web y/o aplicación móvil, incluyendo sin limitación alguna el periodo máximo de tiempo de almacenamiento de la información; (ii) LA EMPRESA no será responsable por la pérdida o falla de la información que pueda presentarse por el mantenimiento o actualización del Sitio Web y/o aplicación móvil; (iii) LA EMPRESA se reserva el derecho de terminar cuentas que estén inactivas por un periodo de tiempo extendido; (iv) LA EMPRESA se reserva el derecho de cambiar y/o modificar estas prácticas y límites en cualquier momento, bajo su propia discreción, sin ningún aviso previo.
+8. ACCESO A LA PLATAFORMA Y SITIO WEB.
+El USUARIO es responsable de obtener acceso a la red de datos necesarios para el uso de los servicios. Podrán aplicarse tarifas y tasas de datos y mensajes de la red móvil del USUARIO. El USUARIO es responsable por el pago de dichas tarifas y tasas, así como, de la adquisición y actualización del hardware compatible o los dispositivos necesarios para acceder y utilizar el Sitio Web y/o aplicación móvil, y cualquier actualización de estos. Los servicios podrán ser objeto de disfunciones o retrasos inherentes al uso de Internet y de las comunicaciones electrónicas.
+LA EMPRESA no garantiza al USUARIO una determinada disponibilidad del funcionamiento del Sitio Web y/o aplicación móvil. No obstante, LA EMPRESA hará esfuerzos razonables por mantener su plataforma disponible.
+9. CONDICIONES DE USO.
+Conducta del USUARIO: Los ejemplos mencionados seguido de este párrafo hacen referencia al tipo de conducta o usos prohibidos por LA EMPRESA y por la Ley. LA EMPRESA se reserva el derecho de denunciar ante las autoridades correspondientes cualquier actividad que en consideración de LA EMPRESA viole estas provisiones. Adicionalmente, en caso de considerarlo necesario, LA EMPRESA podrá tomar cualquiera de estas acciones: (i) La remoción del contenido violatorio del servicio; (ii) La suspensión o terminación de la cuenta.
+El USUARIO reconoce y acepta NO usar el servicio para:
+•	(i) Interrumpir o interferir el servicio, servidores o redes conectadas al Sitio Web y/o aplicación móvil, o desobedecer cualquier requerimiento, términos y condiciones o políticas de privacidad vinculadas al servicio.
+•	(ii) Violar cualquier Ley o regulación nacional o internacional.
+•	(iii) Hacerse pasar por cualquier persona natural o jurídica, o falsamente representar vínculo con otra persona natural o jurídica.
+•	(iv) Solicitar información confidencial de otros USUARIOS.
+•	(v) Publicar u ofrecer vender, ceder o comprar servicios o bienes de LA PLATAFORMA directamente a terceros, omitiendo el uso del Sitio Web y/o aplicación móvil sin la previa autorización por LA EMPRESA.
+•	(vi) Compartir o promover cualquier actividad criminal o información acerca de actividades ilícitas.
+•	(vii) Aplicar ingeniería inversa, descompilar o valerse de cualquier otro medio para tratar de descubrir el código fuente, código objeto de la estructura de la aplicación.
+•	(viii) Obtener o intentar obtener acceso a cualquier información confidencial de LA EMPRESA o de sus USUARIOS a través de cualquier medio.
+10. TARIFAS Y PAGOS.
+GANADER APP obra como plataforma de servicios prestados a los USUARIOS, por lo que una vez el USUARIO haya seleccionado un, o varios PRODUCTOS O SERVICIOS, podrán aplicar diferentes tarifas, dependiendo del servicio o porción del mismo. El USUARIO deberá seleccionar el método de pago y, dependiendo del mismo, suministrar la información referente a su tarjeta de débito o crédito. El USUARIO se compromete a suministrar información verdadera y autorizada referente al medio de pago usado. Asimismo, el USUARIO reconoce y acepta que: (i) Deberá actualizar la información referente al medio de pago, en caso de que hayan modificaciones; (ii) Pagará a LA PLATAFORMA el valor previamente detallado de acuerdo con las tarifas al momento de solicitar los PRODUCTOS O SERVICIOS; (iii) Cualquier PRODUCTO O SERVICIO solicitado por el USUARIO será cargado en un tiempo prudente previo a la hora prevista para su entrega, sin que haya lugar a devoluciones dentro de los límites establecidos por la Ley 1480 de 2011.
+LA PLATAFORMA no garantiza al USUARIO tiempos de procesamiento de una transacción. No obstante, hará esfuerzos razonables para procesar las transacciones ágilmente. En todo caso, LA PLATAFORMA se exime del retardo en el procesamiento de transacciones resultantes de horarios o procesos bancarios, o de cualquier tipo de fallas en el servicio de los demás agentes que intervienen o inciden en el procesamiento de pagos, tales como redes de procesamiento, pasarelas de pago, bancos, franquicias, proveedores de Internet y servidores, entre otros, y en general de todo evento que exceda su control en el procesamiento.
+LA EMPRESA se reserva el derecho de modificar, cambiar, agregar, o eliminar las tarifas vigentes, en cualquier momento, lo cual será notificado a los USUARIOS por correo electrónico. Sin embargo, LA EMPRESA podrá modificar temporalmente las tarifas por sus servicios por razón de promociones, siendo efectivas estas modificaciones cuando se haga pública la promoción o se realice el anuncio.
+LA EMPRESA se reserva el derecho de tomar medidas judiciales y extrajudiciales que estime pertinentes para obtener el pago del monto debido.
+En caso de haberse facturado cargos que no hubiesen correspondido, el USUARIO deberá comunicarse con nuestro equipo de Atención al Usuario para resolver dicha cuestión.
+
+11. POLÍTICA DE CANCELACIÓN.
+Si los PRODUCTOS O SERVICIOS no se ajustan a la calidad, idoneidad o seguridad propias de cada cual, el cliente podrá solicitar el cambio del mismo, siempre que haya fundamento jurídico y racional para ello. La garantía solo aplica para características objetivas de los PRODUCTOS O SERVICIOS que sean informados de manera clara a los consumidores y bajo ninguna circunstancia, procederá en casos subjetivos.
+12. CÓDIGOS PROMOCIONALES.
+LA EMPRESA podrá, a su sola discreción, crear códigos promocionales que podrán ser canjeados por crédito o PRODUCTOS O SERVICIOS a favor del USUARIO. El USUARIO reconoce y acepta que los códigos promocionales deben ser usados para: (i) El propósito deseado, y de manera lícita; (ii) No podrán ser duplicados, vendidos o transferidos de ninguna manera; (iii) Podrán ser invalidados por LA EMPRESA en cualquier momento, por cualquier motivo sin responsabilidad para LA EMPRESA, salvo en aquellos casos en los que un USUARIO haya adquirido un servicio mediante el uso del código, caso en el cual las condiciones de la venta deberán mantenerse; (iv) Podrán usarse solo bajo las condiciones especificas que LA EMPRESA establezca para dicho código promocional; (v) No serán válidos como efectivo; (vi) Podrán caducar antes de que el USUARIO lo utilice. LA EMPRESA se reserva el derecho de retener o deducir el crédito u otros elementos o beneficios obtenidos a través de la utilización de los códigos promocionales por el USUARIO en el caso de que LA EMPRESA determine o crea que el uso o el canje de los códigos promocionales fue de modo erróneo, fraudulento, ilegal o infringiendo las condiciones del código promocional o las presentes Condiciones.
+13. USO COMERCIAL.
+A menos que sea expresamente autorizado por LA EMPRESA, el USUARIO NO podrá: distribuir, desarrollar, publicar, reproducir, duplicar, copiar, modificar, vender, re-vender, explotar, transferir, o actualizar para ningún propósito comercial cualquier PRODUCTO O SERVICIO, o acceso al servicio prestado por LA PLATAFORMA. El servicio es para el uso personal del USUARIO.
+
+14. PROPIEDAD DE LOS DERECHOS INTELECTUALES.
+Contenido del servicio, software y marcas: El USUARIO reconoce y acepta que el PRODUCTO O SERVICIO podrá ofrecer contenidos y/o características que están protegidas por leyes de derechos de autor. El uso indebido y la reproducción total o parcial de dichos contenidos quedan prohibidos, salvo autorización expresa y por escrito de LA EMPRESA.
+La razón social, aplicación, logos, marcas, PRODUCTOS O SERVICIOS ofrecidos, son propiedad de LA EMPRESA. Ninguna cláusula establecida por la empresa da el derecho al USUARIO de modificar, copiar, enmarcar, rentar, prestar, vender, re-vender, distribuir, crear aplicaciones derivadas basadas en parte o en el total del servicio, a menos que sea con autorización previamente emitida por la empresa.
+La plataforma podrá contener enlaces a otros Sitios Web, lo cual no indica que sean propiedad u operados por LA EMPRESA. En virtud de que LA EMPRESA no tiene control sobre tales sitios NO será responsable por los contenidos, materiales, acciones y/o servicios prestados por los mismo, ni por daños o pérdidas ocasionadas por la utilización de los mismos, sean causadas directa o indirectamente. La presencia de enlaces a otros Sitio Web y/o aplicaciones móviles no implica una sociedad, relación, aprobación, respaldo de LA EMPRESA a dichos sitios y sus contenidos.
+15. RESPONSABILIDAD POR LA INFORMACIÓN CONTENIDA.
+LA EMPRESA no será responsable por los daños y perjuicios que pudieran ocasionarse mediante el uso de la información provista por medio del Sitio Web y/o aplicación móvil, salvo que dicha información haya sido brindada manifiestamente con ánimo de dañar a los USUARIOS del servicio.
+Debido a la cantidad de medios técnicos que no permiten garantizar la absoluta injerencia de la acción de terceras personas en los sitios publicados en Internet, LA PLATAFORMA no garantiza la exactitud y/o veracidad de todo o parte de la información contenida en el sitio, ni su actualización, ni que dicha información haya sido alterada o modificada en todo o en parte, luego de haber sido incluida en el sitio, ni cualquier otro aspecto o característica de la información brindada por medio del Sitio Web y/o aplicación móvil o a través de los links eventualmente incluidos en el mismo.
+LA EMPRESA no se responsabiliza por cualquier daño, perjuicio o pérdida al USUARIO causados por fallas en el sistema, en el servidor o en Internet.
+LA EMPRESA no garantiza la ausencia de virus ni de otros elementos en los contenidos que puedan producir alteraciones en su sistema informático o en los documentos electrónicos y ficheros almacenados en su ordenador.
+LA EMPRESA excluye cualquier responsabilidad por los daños y perjuicios de toda naturaleza que puedan deberse a la presencia de virus o a la presencia de otros elementos en los contenidos que puedan producir alteraciones en el sistema informático, documentos electrónicos o ficheros de los usuarios.
+Por lo mismo, LA EMPRESA no será responsable por ningún daño que se derive de cualquier alteración que se haya efectuado a los materiales para descargar provistos directamente por el Sitio Web y/o aplicación móvil.
+16. TERMINACIÓN DEL SERVICIO.
+Sin perjuicio de esta Sección, el presente Acuerdo permanecerá en pleno vigor y efecto mientras el USUARIO utiliza los PRODUCTOS O SERVICIOS. De igual forma, El USUARIO reconoce y acepta que LA EMRPESA bajo su propia discreción podrá suspender o terminar la cuenta, o parte de esta, con o sin notificación previa por cualquier razón, incluyendo la sospecha por parte de LA EMPRESA de violación de los Términos y Condiciones aquí descritos. El USUARIO entiende que cualquier terminación de su cuenta implica la eliminación de su contenido de USUARIO asociado con el mismo de nuestras bases de datos en vivo. No tendremos ninguna responsabilidad hacia el USUARIO por cualquier terminación de este Acuerdo, incluyendo la terminación de la Cuenta o la eliminación del contenido del USUARIO. A la terminación de este Acuerdo, todas las disposiciones se terminarán excepto aquellos que por su naturaleza deberían sobrevivir.
+17. RENUNCIA.
+Los PRODUCTOS O SERVICIOS se proporcionan “tal cual” y “como disponibles”. LA EMPRESA renuncia a toda declaración y garantía, expresa, implícita o estatutaria, no expresamente establecida en estas condiciones, incluidas las garantías implícitas de comerciabilidad, idoneidad para un fin particular y no violación. Además, LA EMPRESA no hace declaración ni presta garantía alguna relativa a la fiabilidad, puntualidad, calidad, idoneidad o disponibilidad de los PRODUCTOS O SERVICIOS o cualquiera de los PRODUCTOS O SERVICIOS solicitados a través del uso del Sitio Web y/o aplicación móvil, o que los PRODUCTOS O SERVICIOS no serán interrumpidos o estarán libres de errores. LA EMPRESA no garantiza la calidad, idoneidad, seguridad o habilidad de las personas encargadas de realizar el domicilio. No obstante, LA EMPRESA hará esfuerzos razonables para prestar calidad en el PRODUCTO O SERVICIO prestado a fin de contribuir con tranquilidad del USUARIO y mitigar el riesgo de incumplimiento por parte del personal encargado de la entrega frente al USUARIO. El USUARIO acuerda que todo riesgo derivado de su uso de los servicios y cualquier servicio o bien solicitado en relación con aquellos será únicamente de él o ella, en la máxima medida permitida por la ley aplicable.
+18. INDEMNIDAD.
+LA EMPRESA no será responsable y se excluye cualquier responsabilidad por daños, pérdidas (incluyendo daños o pérdidas directos, indirectos, resultantes, punitivos, especiales, etc.), reclamaciones, demandas, gastos (incluyendo costas legales), daños, sanciones y multas (incluyendo de terceros) relacionados directa o indirectamente con el servicio prestado por el personal encargado de la entrega del PRODUCTO O SERVICIO, incluyendo: (i) el Dispositivo, la Aplicación, el Servicio y los Datos; (ii) el PRODUCTO O SERVICIO.
+al de los Términos y Condiciones generales, los siguientes documentos donde se detallan políticas y/o Términos y Condiciones de diferentes servicios ofrecidos por LA PLATAFORMA Los mismos se podrán consultar dentro del Sitio Web y/o Aplicación mediante el enlace abajo provisto o accediendo directamente a las páginas correspondientes:
+•	Política de privacidad.
+23. TRATAMIENTO DE DATOS.
+El USUARIO manifiesta de manera libre y voluntaria que autorizan a LA EMPRESA, GANADER-APP para realizar el tratamiento de sus datos personales que sean suministrados con ocasión a la prestación de servicios, los cuales se utilizarán para establecer y mantener la relación comercial, remitir información referente a la relación comercial, contractual u obligacional establecida con LA EMPRESA; Compartir su información personal y cualquier otra información de contacto y financiera con terceras partes en caso que LA EMPRESA considere que podrían servir para sus intereses comerciales; Efectuar el cobro de cuentas por pagos debido a los servicios prestados, y; Para cualquier otra finalidad que resulte en el desarrollo de la relación comercial que surja con ocasión en la presente relación contractual, dentro de las cuales se encuentra la remisión de cualquier información de carácter financiero, comercial, crediticio o de servicios con fines estadísticos, de control, o supervisión que deban procesarse, reportarse, conservarse, consultarse, suministrarse o actualizarse ante las centrales de información o bases de datos debidamente constituidas para tal fin, que estime conveniente, en los términos y durante el tiempo que los sistemas de bases de datos, las normas y las autoridades lo establezcan. El USUARIO reconoce y acepta que sus datos personales podrán ser puestos a disposición del personal encargado de labor correspondiente, dentro de LA EMPRESA, sin excluirse la posibilidad de ser transferidos a encargados, consultores, asesores, personas y oficinas externas según sea necesario. LA EMPRESA informa a los USUARIOS acerca de sus derechos como titular de datos personales, como lo son conocer, actualizar y rectificar sus datos personales frente a los Responsables del Tratamiento o Encargados del Tratamiento, solicitar prueba de la autorización otorgada al Responsable del Tratamiento, revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales, y acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento, así como los demás dispuestos en la Ley. El USUARIO declara y reconoce y acepta que la información suministrada a LA PLATAFORMA, es de forma voluntaria, con ocasión del registro y/o prestación del servicio. De igual forma se comprometen a suministrar información verídica, que no se ha omitido o adulterado ninguna forma. Adicionalmente, el USUARIO manifiesta que se les ha puesto a su disposición, y que por lo tanto conocen los Términos y Condiciones de LA PLATAFORMA, los cuales se encuentran disponibles en un lugar visible de las instalaciones y en el Sitio web y/o Aplicación de LA PLATAFORMA, donde se mantendrá a su disposición la última versión de la mencionada Política.
+El USUARIO autoriza a LA EMPRESA para recolectar y utilizar la información, datos y marcas comerciales para asuntos de carácter netamente comercial.
+24. LEY APLICABLE Y JURISDICCIÓN.
+Este acuerdo estará regido en todos sus puntos por las leyes vigentes en la Republica de Colombia. Cualquier controversia derivada del presente acuerdo, su existencia, validez, interpretación, alcance o cumplimiento, será sometida a las Leyes aplicables y a los tribunales competentes de la ciudad de Medellín u otro lugar del territorio colombiano, y los procedimientos se llevarán a cabo en el idioma Castellano.
+25. DOMICILIO.
+Se fija como domicilio de LA EMPRESA la ciudad de Medellín, Colombia.
+    </string>
+    <string name="madre">Madre</string>
+    <string name="title_activity_inicio_subasta">Inicio_Subasta</string>
+
+
+</resources>

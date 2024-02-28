@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo"
+    tools:context=".views.manejo_produccion.Detalle_Estadisticas">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_d_produccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/lightGray"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center_horizontal"
+                android:text="Produccion"
+                android:textColor="@color/azul"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:id="@+id/ln_icons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_4"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_d_produccion">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:paddingStart="15dp"
+                        android:text="@string/fecha_produccion"
+                        android:textColor="@color/negro"
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:id="@+id/tv_d_prod_f"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:hint="@string/fecha_produccion"
+                        android:textSize="17sp" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_esta_p_admin_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_icons">
+
+                <LinearLayout
+                    android:id="@+id/ln_d_ganancia_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:layout_margin="@dimen/margin_4"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_produccion_f">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ganacia_mes"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp"
+                        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/img_ganancia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_administracion"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/edt_d_prod_ganancia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/ganacia"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_d_gasto_prod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_icons"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/gasto"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp"
+                        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_perdidas"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_prod_gasto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:hint="Gasto"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:textSize="20sp"
+                        tools:ignore="InefficientWeight" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_prod_medida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_esta_p_admin_prod">
+
+
+                <LinearLayout
+                    android:id="@+id/ln_d_esta_p_admin_litros_prod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/animales_medidos"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_esta_p_admin_pro_leche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_cabeza_de_toro_frontal"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_esta_prod_cant_aniamales_medidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:hint="@string/animales_medidos"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_d_litros_prod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/litros_medidos"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_ordeno_great"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_litros_medidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/litros"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_detalle_estadisticas_leche_mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/appbar_margin"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_prod_medida"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:background="@drawable/cuadro_redondo"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_icons"
+                    tools:ignore="RtlHardcoded">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/promedio_leche_diario"
+                        android:textColor="@color/negro"
+                        android:textStyle="bold"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_prom_leche_dia_mes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_estadisticas"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_d_prod_promedio_leche_dia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:hint="@string/promedio_leche"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:background="@drawable/cuadro_redondo"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/leche_producida_mes"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_esta_prod_leche_dia_delmes"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_ubre" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_litros_producidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:hint="@string/litros_producidos"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_detalle_promedio_leche"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/appbar_margin"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_detalle_estadisticas_leche_mes"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:id="@+id/ln_d_prom_mes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_icons"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/promedio_produccion_leche"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_prom_mes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_resultados"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_prod_promedio_leche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/azul"
+                        android:textStyle="bold"
+                        android:hint="@string/promedio_leche"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/cuadro_redondo"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod"
+                    tools:ignore="RtlHardcoded">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/estado_productivo_leche"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_estado_leche"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_up_movement" />
+
+                    <TextView
+                        android:id="@+id/tv_d_estado_productivo_leche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/estado"
+                        android:textStyle="bold"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_d_esta__kilos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_detalle_promedio_leche">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_esta_p_admin_litros_prod">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/animales_pesados"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp"
+                        android:padding="2sp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_cabeza_de_toro_frontal"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_esta_prod_cant_aniamales_pesados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/animales_pesados"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_d_kilos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:background="@drawable/cuadro_redondo"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/kilos_pesados"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_peso"
+                        tools:ignore="ContentDescription" />
+
+
+                    <TextView
+                        android:id="@+id/tv_d_estad_cant_kilos_pesados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/kilos_pesados"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_promedios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/appbar_margin"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_esta__kilos"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:id="@+id/ln_d_estado_carne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:background="@drawable/cuadro_redondo"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_icons"
+                    tools:ignore="RtlHardcoded">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/estado_productivo_carne"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_d_estado_productivo_carne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_up_movement"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_d_estado_productivo_carne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:hint="@string/promedio_leche"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_4"
+                    android:layout_weight="5"
+                    android:background="@drawable/cuadro_redondo"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_d_gasto_prod"
+                    tools:ignore="RtlHardcoded">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@string/promedio_produccion_carne"
+                        android:textColor="@color/negro"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/img_esta_prod"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_resultados" />
+
+                    <TextView
+                        android:id="@+id/tv_d_prod_promedio_carne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:hint="@string/promedio_carne"
+                        android:textColor="@color/azul"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+    s
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

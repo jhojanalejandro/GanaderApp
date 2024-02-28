@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_producion_p_admin"
+                android:layout_width="396dp"
+                android:layout_height="228dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_citris"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_spinner_tipo_prod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/negro"
+                android:textStyle="bold"
+                android:text="Tipo De Produccion"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_producion_p_admin" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_prod_p_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_spinner_tipo_prod"
+                tools:ignore="MissingConstraints" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_sesion_contenedor_fragments_p_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipo_prod_p_admin">
+
+
+                <LinearLayout
+                    android:id="@+id/ln_p_admin_tipo_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_fecha_medida"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_p_admin_prom_mes">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:padding="@dimen/margin_4"
+                            android:gravity="right"
+                            android:text="@string/fecha_medida"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_pro_fecha_medida"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:paddingTop="@dimen/margin_4"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/fecha_medida"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_pro_p_admin_promedio_mes_media"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/promedio_duccion"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_promedio_mes_medida"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingTop="@dimen/margin_4"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_pro_p_admin_cant_dias_medidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_p_admin_promedio_mes">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/dias_pesaje"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_dias_medidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_prod_p_admin_cant_litros_medidos_mes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_dias_prom">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/litros_medidos"
+                            android:padding="@dimen/margin_4"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_cant_litros_medidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_prod_p_admin_cant_anml_medidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ln_prod_p_admin_cant_litros_medidos_mes">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/animales_medidos"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_cant_animales_medidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_p_admin_fecha_pesaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_p_admin_prom_mes">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/margin_4"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/fecha_pesaje"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_fecha_pesaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/fecha_pesaje"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_p_admin_prom_mes_pesaje"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml_produccion">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/margin_4"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/promedio_duccion"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_promedio_pesaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_pro_p_admin_cant_kilos_pesados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_p_admin_prom_mes_pesaje">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:padding="@dimen/margin_4"
+                            android:gravity="right"
+                            android:text="@string/kilos_pesados"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_prod_cant_kilos_pesados"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_pro_p_admin_cant_anml_pesados"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ln_pro_p_admin_cant_kilos_pesados">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/animales_pesados"
+                            android:padding="@dimen/margin_4"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_cant_animales_pesados"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingTop="@dimen/margin_4"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_anm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml_pro">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_lote01"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_anml_lote1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:gravity="center_vertical"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textColor="@color/azul"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_an"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml1">
+
+                        <TextView
+                            android:id="@+id/tv_cant_anml_lote01_pesados"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:padding="@dimen/margin_4"
+                            android:gravity="right"
+                            android:text="@string/cant_animales_lote02"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_anml_lote2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="@dimen/margin_4"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_an3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_lote03"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_anml_lote3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_anm4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_lote04"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_anml_lote4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textColor="@color/azul"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_nov1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_loten1"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_nov1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_nov2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_nov1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_loten2"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_nov2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textColor="@color/azul"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_nov3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_nov2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_loten3"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_nov3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingTop="@dimen/margin_4"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textColor="@color/azul"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_crias1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_nov3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_lotet1"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_crias1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_crias2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_crias1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:padding="@dimen/margin_4"
+                            android:text="@string/cant_animales_lotet2"
+                            android:textColor="@color/negro"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_crias2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="@dimen/margin_4"
+                            android:text="@string/cero"
+                            android:textColor="@color/azul"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_crias3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_crias2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/margin_4"
+                            android:textColor="@color/negro"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/cant_terneras03"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_crias3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:paddingTop="@dimen/margin_4"
+                            android:paddingStart="15sp"
+                            android:textColor="@color/azul"
+                            android:paddingLeft="15sp"
+                            android:text="@string/cero"
+                            android:textSize="18sp"
+                            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_anml_horra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:background="@drawable/cuadro_redondo"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_crias3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/margin_4"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:textColor="@color/negro"
+                            android:text="@string/cant_animales_horras"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_pro_p_admn_cant_anml_horras"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/azul"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="@dimen/margin_4"
+                            android:text="0 "
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_cant_anml_produccion_levante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/cuadro_redondo"
+                        android:layout_marginTop="@dimen/margin_4"
+                        android:weightSum="10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ln_cant_anml_horras">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/margin_4"
+                            android:textColor="@color/negro"
+                            android:layout_weight="4"
+                            android:gravity="right"
+                            android:text="@string/animales_en_prod"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_det_p_admn_prod_cant_anml_pod"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/azul"
+                            android:paddingTop="@dimen/margin_4"
+                            android:layout_weight="6"
+                            android:paddingStart="15sp"
+                            android:paddingLeft="15sp"
+                            android:text="0 "
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home_p_prop">
+
+    <fragment
+        android:id="@+id/nav_home_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.Inicio_Perfil"
+        android:label="@string/menu_home_p_prop"
+        tools:layout="@layout/fragment_pagos_p_prop" />
+
+    <fragment
+        android:id="@+id/nav_gallery_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.Gastos_gananciasFragment_p_prop"
+        android:label="@string/menu_gallery_p_prop"
+        tools:layout="@layout/fragment_gallery_p_prop" />
+
+    <fragment
+        android:id="@+id/nav_slideshow_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.ProduccionFragment_p_prop"
+        android:label="@string/menu_slideshow_p_prop"
+        tools:layout="@layout/fragment_produccion_p_prop" />
+
+    <fragment
+        android:id="@+id/nav_tools_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.Analizis_fincaFragment_p_prop"
+        android:label="@string/menu_analizis_p_prop"
+        tools:layout="@layout/fragment_estadisticas_p_prop" />
+
+    <fragment
+        android:id="@+id/nav_share_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.PersonalFragment_p_prop"
+        android:label="@string/menu_share_p_prop"
+        tools:layout="@layout/fragment_share_p_pro" />
+
+    <fragment
+        android:id="@+id/nav_send_p_prop"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_propietario.General_baseAnimalFragment_p_prop"
+        android:label="@string/menu_send_p_prop"
+        tools:layout="@layout/fragment_lista_general_animales" />
+</navigation>

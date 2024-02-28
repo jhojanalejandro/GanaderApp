@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.manejo_usuarios_view.Detalle_Usuario"
+    tools:showIn="@layout/activity_detalle_usuario"
+    android:background="@drawable/ic_logo_fondo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_experiencia_user"
+                android:layout_width="232dp"
+                android:layout_height="154dp"
+                android:layout_marginTop="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.553"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_usuario" />
+
+            <TextView
+                android:id="@+id/tv_tpo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_horizontal"
+                android:text="Tipo Usuario"
+                android:textColor="@color/azul"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/img_experiencia_user"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Spinner
+                android:id="@+id/spinner_personal_tipo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:scrollbarSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tpo_usuario" />
+
+            <LinearLayout
+                android:id="@+id/ln_id_propietario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:visibility="gone"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_personal_tipo_usuario">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_candado" />
+
+                <EditText
+                    android:id="@+id/edt_id_propietario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_codigo"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_nombre_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_id_propietario">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_nota" />
+
+                <TextView
+                    android:id="@+id/tv_detalle_nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_name_full"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ln_nivel_acceso_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_nombre_usuario">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="65"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <EditText
+                    android:id="@+id/edt_nivel_accesso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/nivel_acceso"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+                <NumberPicker
+                    android:id="@+id/numberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/lightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.831"
+                    app:layout_constraintStart_toEndOf="@+id/ln_sub_r_rd"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cant_animals_sub" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_d_fincas_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_nivel_acceso_usuario">
+
+                <TextView
+                    android:id="@+id/tv_eleccion_spiner_finca_inicioapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGray"
+                    android:gravity="center_horizontal"
+                    android:text="@string/fincas"
+                    android:textColor="@color/azul"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinner_eleccion_finca_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:prompt="@string/fincas"
+                    android:textAlignment="gravity"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_ingreso_emp_spiner_finca"
+                    app:layout_goneMarginLeft="10dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_nombre_de_usuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_fincas_spinner">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_de_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <EditText
+                    android:id="@+id/edt_tipo_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/tipo_usuario"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_cedula"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_nombre_de_usuario">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_cedula"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_cedula_de_identidad_con_foto_de_mujer" />
+
+                <TextView
+                    android:id="@+id/tv_detalle_cedula_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_cedula"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_telefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_cedula">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_telefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_silueta_de_receptor_de_telefono" />
+
+                <TextView
+                    android:id="@+id/tv_detalle_telelefono_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_telefono"
+                    android:inputType="number"
+                    android:maxLength="10"                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_pago_mensual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="18sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_telefono">
+
+                <ImageView
+                    android:id="@+id/envelope_icon_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_dollar_currency_symbol1" />
+
+                <EditText
+                    android:id="@+id/edt_detalle_pago_mensual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/precio_pago_mes"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

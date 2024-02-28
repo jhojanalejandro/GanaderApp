@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_atras_p_admin"
+        android:orderInCategory="100"
+        android:title="menu"
+        android:tooltipText="@string/ganacia"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_regreso"
+        tools:ignore="AlwaysShowAction,HardcodedText,UnusedAttribute">
+
+    </item>
+
+    <item
+        android:id="@+id/action_atras_p_admi"
+        android:orderInCategory="100"
+        android:title="menu animal"
+        app:subtitle="@string/gastos_adicionales"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dollar_sign"
+        tools:ignore="AlwaysShowAction,HardcodedText">
+        <menu>
+            <item android:id="@+id/action_ganancias_adicionales_p_amin"
+                android:title="@string/ganacia_adicionales"
+                android:icon="@drawable/ic_give_money"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_r_gastos_adicionales"
+                android:title="@string/gastos_adicionales"
+                android:icon="@drawable/ic_dollar_currency_symbol1"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+
+                />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_produccion_diaria_p_admin"
+        android:orderInCategory="100"
+        android:title="menu animal"
+        android:tooltipText="@string/leche_producida_mes"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_ubre_small"
+        tools:ignore="AlwaysShowAction,HardcodedText,UnusedAttribute">
+
+
+    </item>
+
+
+
+    <item android:title="@string/menu"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item android:id="@+id/action_codigo_copiar_p_admin"
+                android:title="@string/action_copiar_codigo"
+                android:icon="@drawable/ic_nota"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_manual_p_admin"
+                android:title="@string/action_manual"
+                android:icon="@drawable/ic_nota"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+
+            <item android:id="@+id/action_ir_porero"
+                android:title="@string/action_lista_porero"
+                android:icon="@drawable/ic_ir"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+
+                />
+
+            <item android:id="@+id/action_lista_animales_general"
+                android:icon="@drawable/ic_ir"
+                android:title="@string/action_ir_lista_animal"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+
+            <item android:id="@+id/action_registrar_empleado"
+                android:title="@string/action_registrarse"
+                android:icon="@drawable/ic_nota"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_lista_animales_produccion_p_admin"
+                android:title="@string/action_animales_prod"
+                android:icon="@drawable/ic_ir"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_cerrar_sesion_p_admin"
+                android:orderInCategory="100"
+                android:title="@string/cerrar_sesion"
+                android:icon="@drawable/ic_salida"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

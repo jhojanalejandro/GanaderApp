@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_atras_p_animal_m"
+        android:orderInCategory="100"
+        android:title="menu animal_m"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_regreso">
+
+    </item>
+    <item
+        android:orderInCategory="100"
+        android:title="menu animal_m"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu">
+
+        <menu>
+            <item android:id="@+id/action_detalle_animal_m"
+                android:icon="@drawable/ic_boligrafo"
+                android:title="@string/action_detalle_aniaml"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+
+
+            <item android:id="@+id/action_r_insumo_animal_m"
+                android:icon="@drawable/ic_nota"
+                android:title="@string/action_r_insumo_v"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+
+            <item android:id="@+id/action_r_vacunacion_animal_m"
+                android:icon="@drawable/ic_nota"
+                android:title="@string/action_r_vacunacion_vaca"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_r_efmd_m"
+                android:icon="@drawable/ic_nota"
+                android:title="@string/action_r_efmd_vaca"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_volver_inicio_p_animal_m"
+                android:title="@string/action_volver_inicio"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_volver"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_cerrar_sesion_p_animal_m"
+                android:title="@string/action_salir"
+                android:icon="@drawable/ic_salida"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

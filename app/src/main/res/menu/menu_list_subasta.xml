@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_search_"
+        android:icon="@drawable/ic_buscar"
+        android:orderInCategory="100"
+        android:title="menu animal"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:icon="@drawable/ic_menu"
+        android:orderInCategory="100"
+        android:title="@string/action_settings_salri"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_p_sub_add_animal"
+                android:orderInCategory="100"
+                android:title="@string/action_add_anml_sub"
+                android:icon="@drawable/ic_ir"
+                app:showAsAction="never" />
+
+
+            <item
+                android:id="@+id/action_p_sub_list_subasta"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_ir"
+                android:title="@string/action_lista_subasta"
+                app:showAsAction="never" />
+
+
+            <item
+                android:id="@+id/action_p_sub_cerrar_cession"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_cliente"
+                android:title="@string/action_r_prop"
+                app:showAsAction="never" />
+
+
+
+        </menu>
+
+    </item>
+</menu>

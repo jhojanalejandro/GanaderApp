@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item
+    android:id="@+id/navigation_terneras_01"
+    android:icon="@drawable/ic_uno"
+    android:title="terneras" />
+
+<item
+    android:id="@+id/navigation_teneras_02"
+    android:icon="@drawable/ic_dos"
+    android:title="terneras" />
+
+
+    <item
+        android:id="@+id/navigation_terneras_03"
+        android:icon="@drawable/ic_tres"
+        android:title="terneras"
+        tools:ignore="HardcodedText" />
+
+
+    <item
+        android:id="@+id/navigation_lotter_04"
+        android:icon="@drawable/ic_cuatro"
+        android:title="terneras"
+        tools:ignore="HardcodedText" />
+
+
+    <item
+        android:id="@+id/navigation_lotnov_01"
+        android:icon="@drawable/ic_uno"
+        android:title="novillas"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/navigation_lotnov_02"
+        android:icon="@drawable/ic_dos"
+        android:title="novillas"
+        tools:ignore="HardcodedText" />
+
+
+    <item
+        android:id="@+id/navigation_lotnov_03"
+        android:icon="@drawable/ic_tres"
+        android:title="novillas" />
+
+
+    <item
+        android:id="@+id/navigation_lotnov_04"
+        android:icon="@drawable/ic_cuatro"
+        android:title="novillas" />
+
+
+
+</menu>

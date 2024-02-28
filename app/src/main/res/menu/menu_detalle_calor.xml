@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_salir_detalle_calor"
+        android:orderInCategory="100"
+        android:title="@string/action_settings_salri"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_m_calor_animal"
+        android:title="@string/action_ir_lista_animal"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_d_calor_lista_porero"
+        android:title="@string/action_lista_porero"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

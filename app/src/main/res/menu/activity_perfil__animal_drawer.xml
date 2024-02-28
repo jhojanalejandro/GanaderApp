@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio_p_animal"
+            android:icon="@drawable/ic_inicio_dos"
+            android:title="@string/menu_inicio_perfil_animal" />
+
+        <item
+            android:id="@+id/nav_secado_p_animal"
+            android:icon="@drawable/ic_water"
+            android:title="@string/menu_home_perfil_animal" />
+        <item
+            android:id="@+id/nav_gallery_p_animal"
+            android:icon="@drawable/ic_bin"
+            android:title="@string/menu_gallery_perfil_animal" />
+        <item
+            android:id="@+id/nav_slideshow_p_animal"
+            android:icon="@drawable/ic_syringe"
+            android:title="@string/menu_slideshow_perfil_animal" />
+        <item
+            android:id="@+id/nav_tools_p_animal"
+            android:icon="@drawable/ic_birth"
+            android:title="@string/menu_tools_perfil_animal" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share_p_animal"
+                android:icon="@drawable/ic_vaccine"
+                android:title="@string/menu_share_perfil_animal" />
+            <item
+                android:id="@+id/nav_send_p_animal"
+                android:icon="@drawable/ic_dom"
+                android:title="@string/menu_send_perfil_animal" />
+            <item
+                android:id="@+id/nav_produccion_pesaje_p_animal"
+                android:icon="@drawable/ic_impresora_3d"
+                android:title="@string/menu_produccion_pesaje_perfil_animal" />
+
+            <item
+                android:id="@+id/nav_produccion_leche_p_animal"
+                android:icon="@drawable/ic_impresora_3d"
+                android:title="@string/menu_produccion_leche_perfil_animal" />
+        </menu>
+    </item>
+</menu>

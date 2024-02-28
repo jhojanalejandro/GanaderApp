@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.inicio_view.Inicio_Ganaderapp"
+    tools:showIn="@layout/activity_inicio__ganderapp">
+
+    <FrameLayout
+        android:id="@+id/fl_inicio_ganaderapp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/ln_fincas_control"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ln_inicioapp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ingreso_emp_spiner_finc"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <LinearLayout
+                android:id="@+id/ln_ctl_ag_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ingreso_emp_spiner_finc"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/ln_fincas_control_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_eleccion_spiner_finca_inicioapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightGray"
+                        android:gravity="center_horizontal"
+                        android:text="@string/fincas"
+                        android:textColor="@color/azul"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spinner_eleccion_finca_inicioapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:textAlignment="center"
+                        android:prompt="@string/fincas"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_ingreso_emp_spiner_finca"
+                        app:layout_goneMarginLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/animales"
+                        android:textColor="@color/azul"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/btn_manejo_animal_inicioapp"
+                        android:layout_width="145dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/imagen_perfil"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/appbar_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/potrero"
+                        android:textColor="@color/azul"
+                        android:textSize="20sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_manejo_potreros_inicioapp"
+                        android:layout_width="145dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_m_pto"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/appbar_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/insumos"
+                        android:textColor="@color/azul"
+                        android:textSize="20sp" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_manejo_insumos_inicio_app"
+                        android:layout_width="145dp"
+                        android:layout_height="95dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_m_insumos" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_ctl_ag_adelantadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_list_adelantada_inicioapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_ctl_ag_secas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_list_secas_inicioapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

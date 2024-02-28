@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_palpar_posparto"
+        android:icon="@drawable/ic_toro_mitad"
+        android:title="palpacion" />
+
+    <item
+        android:id="@+id/navigation_palpar_preparto"
+        android:icon="@drawable/ic_cow_silhouette"
+        android:title="posparto" />
+
+</menu>

@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.agroapp.proyecto_esmeralda.views.menejo_potreros.Detalle_Potero">
+
+    <item
+        android:icon="@drawable/ic_menu"
+        android:orderInCategory="100"
+        android:title="@string/action_settings_salri"
+        app:showAsAction="always">
+        <menu>
+
+            <item android:id="@+id/action_r_insumo_potreros"
+                android:title="@string/action_r_insumo_pot"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_nota"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_menu_admin_detalle_potreros"
+                android:title="@string/action_menu_p_admin"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_administrador_web"
+                app:showAsAction="never" />
+
+
+            <item android:id="@+id/action_volver_inicio_detalle_pto"
+                android:title="@string/action_volver_inicio"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_ir"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_cerrar_cession_detalle_pto"
+                android:title="@string/action_salir"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_salida"
+                app:showAsAction="never" />
+
+
+
+        </menu>
+    </item>
+</menu>

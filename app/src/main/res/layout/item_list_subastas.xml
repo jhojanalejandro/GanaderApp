@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#444444">
+
+        <ImageView
+            android:id="@+id/img_sub_list_anml1"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_margin="@dimen/appbar_margin"
+            android:layout_gravity="center|left"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toEndOf="@+id/img_sub_list"
+            app:srcCompat="@drawable/vaca_cara2" />
+
+        <ImageView
+            android:id="@+id/img_sub_list_anml2"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="75sp"
+            android:layout_gravity="center|left"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="8sp"
+            android:layout_toEndOf="@+id/img_sub_list"
+            app:srcCompat="@drawable/vaca_cara2" />
+
+        <VideoView
+            android:id="@+id/video_sub_list"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_margin="@dimen/appbar_margin"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8sp"
+            android:layout_toEndOf="@+id/img_sub_list"
+            app:srcCompat="@drawable/vaca_cara2" />
+
+        <ImageView
+            android:id="@+id/img_sub_list_anml3"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/appbar_margin"
+            android:layout_toEndOf="@+id/img_sub_list"
+            app:srcCompat="@drawable/vaca_cara2" />
+        <ImageView
+            android:id="@+id/img_sub_list_anml4"
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="75sp"
+            android:layout_toEndOf="@+id/img_sub_list"
+            app:srcCompat="@drawable/vaca_cara2" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_gravity="center"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/ln_sub_opc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4sp"
+            android:background="@drawable/ic_logo_fondo"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parent">
+
+            <LinearLayout
+                android:id="@+id/ln_sub_fecha_n_anml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/percent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_calendario" />
+
+                <TextView
+                    android:id="@+id/edt_sub_fecha_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:hint="@string/enter_f_public_sub"
+                    android:padding="2sp"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_peso_sub_anml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="4sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <TextView
+                    android:id="@+id/tv_sub_list_cant_anmls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:padding="2sp"
+                    android:text="CANTIDAD ANIMALES"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_ubi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="@dimen/margin_4"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_map_small" />
+
+                <TextView
+                    android:id="@+id/tv_sub_list_ubicacion_departamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:hint="@string/enter_ubicacion"
+                    android:inputType="textPersonName"
+                    android:padding="2sp"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_cronometro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginBottom="4sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_map_small" />
+
+
+                <TextView
+                    android:id="@+id/tv_sub_list_ubicacion_vereda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:layout_weight="75"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:hint="@string/enter_ubicacion"
+                    android:padding="2sp"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_sub_opc3"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="8sp"
+            android:background="@drawable/ic_logo_fondo"
+            android:orientation="vertical"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parent">
+
+
+            <LinearLayout
+                android:id="@+id/ln_sub_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_dollar_currency_symbol" />
+
+                <TextView
+                    android:id="@+id/tv_sub_precio_animales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:hint="@string/enter_precio_anml"
+                    android:inputType="number"
+                    android:padding="2sp"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_name_register_anml"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/appbar_margin"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/envelope_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_three_anmls_small" />
+
+                <TextView
+                    android:id="@+id/tv_sub_list_descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:hint="@string/enter_raza_anml"
+                    android:padding="2sp"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:background="@drawable/input_bg"
+            android:orientation="vertical"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                app:srcCompat="@drawable/ic_reloj_de_arena" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:hint="tiempo"
+                android:inputType="number"
+                android:padding="2sp"
+                android:textSize="20sp"  />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

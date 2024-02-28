@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.agroapp.proyecto_esmeralda">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_laesmeralda"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_laesmeralda_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.manejo_subastas_view.Inicio_Subasta"
+            android:exported="true"
+            android:label="@string/title_activity_inicio_subasta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.manejo_subastas_view.Registro_Subastas" />
+        <activity
+            android:name=".views.menejo_potreros.Detalle_Potero"
+            android:label="@string/title_activity_detalle__potero"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.inicio_view.Farm_Register" />
+        <activity android:name=".views.manejo_usuarios_view.User_Register" />
+        <activity
+            android:name=".views.inicio_view.Inicio_Ganaderapp"
+            android:label="@string/title_activity_inicio__ganderapp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.perfil_animal_views.Detalle_Animal"
+            android:label="@string/title_activity_detalle__animal"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".activities.LocationLoggerServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="LocationLoggerServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activities.Detalle_prod_individual" />
+        <activity android:name=".views.manejo_produccion.Detalle_Estadisticas" />
+        <activity
+            android:name=".views.manejo_animal_view.Detalle_enfermedad"
+            android:label="@string/title_activity_detalle_enfermedad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_subastas_view.Perfil_Subastar_View"
+            android:label="@string/title_activity_detalle_animal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_animal_view.Detalle_Secado"
+            android:label="@string/title_activity_detalle__secado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_subastas_view.Lista_Subatas_usuarios"
+            android:label="@string/title_activity_detalle_parto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_animal_view.Detalle_calor"
+            android:label="@string/title_activity_detalle_calor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_animal_view.Manejo_animales_produ"
+            android:label="@string/title_activity_manejo_animales_levante"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_insumos_view.Manejo_Insumos_View"
+            android:label="@string/title_activity_control_insumos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.inicio_view.Control_agricola_view"
+            android:label="@string/title_activity_control_agricola"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_usuarios_view.Detalle_Usuario"
+            android:label="@string/title_activity_detalle_insumos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.perfil_animal_macho.Perfil_animal_macho"
+            android:label="@string/title_activity_perfil_animal_macho"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_animal_view.Detalle_palpacion"
+            android:label="@string/title_activity_detalle_animal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.menejo_potreros.Lista_Potreros_View"
+            android:label="@string/title_activity_lista_potreros"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.perfil_propietario.Perfil_propietario"
+            android:label="@string/title_activity_perfil_propietario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.perfil_admin_views.Perfil_admin_view"
+            android:label="@string/title_activity_p_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.perfil_animal_views.Perfil_Animal_view"
+            android:label="@string/title_activity_p_animal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.inicio_view.Login_view" />
+        <activity
+            android:name=".views.menejo_potreros.Manejo_Potreros"
+            android:label="@string/title_activity_manejo__potreros"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.manejo_animal_view.Manejo_animal_view"
+            android:label="@string/title_activity_registro1_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.inicio_view.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.themes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".activities.ServicioSegundoPlano"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

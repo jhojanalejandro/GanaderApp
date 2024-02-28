@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".views.menejo_potreros.Detalle_Potero">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_detalle_potrero"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:background="@color/gris_oscuro"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout_detalle_potrero"
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_yarda"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+
+            <TextView
+                android:id="@+id/tv_add_animal"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/negro"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="265sp"
+                android:layout_marginTop="190sp"
+                android:layout_marginEnd="8sp"
+                android:layout_marginBottom="140sp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/agregar_animal" />
+
+            <TextView
+                android:id="@+id/tv_pto_salida_animal"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/rojo"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="120sp"
+                android:layout_marginTop="190sp"
+                android:layout_marginEnd="148sp"
+                android:layout_marginBottom="140sp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/agregar_animal" />
+
+
+            <ImageView
+                android:id="@+id/imagemView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detalle_potrero"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_date_small"/>
+
+                <TextView
+                    android:id="@+id/tv_fecha_datalle_potrero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="18sp"
+                    android:textSize="25sp" />
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_nmero_animales_pto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18sp"
+            android:text="@string/nombre"
+            android:textSize="25sp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_detalle_potrero" />
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_detalle_potrero_salida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_25"
+        android:backgroundTint="@color/rojo"
+        app:layout_anchor="@id/app_bar_detalle_potrero"
+        app:layout_anchorGravity="bottom|center"
+        app:srcCompat="@drawable/ic_up_movement"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_detalle_potrero_ingreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_25"
+        android:backgroundTint="@color/cafe_claro"
+        app:layout_anchor="@id/app_bar_detalle_potrero"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_add_azul"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".views.inicio_view.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/ic_citrigan"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/img_g"
+        android:layout_width="76dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="305sp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_lng" />
+
+    <ImageView
+        android:id="@+id/img_a"
+        android:layout_width="58dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="260sp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_la" />
+
+    <ImageView
+        android:id="@+id/img_n"
+        android:layout_width="41dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="221sp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_ln" />
+
+    <ImageView
+        android:id="@+id/img_aa"
+        android:layout_width="58dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="155sp"
+        android:layout_marginTop="250sp"
+        android:layout_marginEnd="175sp"
+        android:layout_marginBottom="440sp"
+        app:srcCompat="@drawable/ic_la" />
+
+    <ImageView
+        android:id="@+id/img_d"
+        android:layout_width="71dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="130sp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_ld" />
+
+
+    <ImageView
+        android:id="@+id/img_e"
+        android:layout_width="50dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_le" />
+
+    <ImageView
+        android:id="@+id/img_r"
+        android:layout_width="57dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="300sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="440dp"
+        app:srcCompat="@drawable/ic_lnr" />
+
+    <ImageView
+        android:id="@+id/img_ganaderapp"
+        android:layout_width="395dp"
+        android:layout_height="255dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="368dp"
+        app:srcCompat="@drawable/ic_ganaderapp" />
+
+    <LinearLayout
+        android:id="@+id/ln_registrar_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2sp"
+        android:layout_marginTop="500sp"
+        android:layout_marginEnd="210sp"
+        android:layout_marginBottom="20sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registro"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_registrarse"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/registro_usuario"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="500sp"
+        android:layout_marginEnd="2sp"
+        android:layout_marginBottom="20sp"
+        android:layout_toEndOf="@+id/ln_registrar_usuario"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ingreso"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_ingrrsar_login"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ingreso_usuario"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

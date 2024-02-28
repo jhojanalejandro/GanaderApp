@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_r_parto"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/portada" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/lightGray"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_r_parto">
+
+                <EditText
+                    android:id="@+id/et_parto_f"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:hint=" Fecha Parto" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_r_date_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:background="#00000000"
+                    app:srcCompat="@drawable/ic_date_small"
+                    tools:ignore="ContentDescription,VectorDrawableCompat" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rd_reproduccicion"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="8sp"
+                android:background="@color/lightGray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <TextView
+                    android:id="@+id/result_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="GENERO"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:textSize="25dp" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_momia"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="momia"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/result_part" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_macho"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="macho"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_hembra"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="hembra"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_macho" />
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rd_parto_real"
+                android:layout_width="158dp"
+                android:layout_height="176dp"
+                android:layout_marginTop="8sp"
+                android:background="@color/lightGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rd_reproduccicion"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints,NotSibling">
+
+                <TextView
+                    android:id="@+id/result_parto_reales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="NACIMIENTO"
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:textSize="25dp" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_parto_real"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="@string/real"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_momia" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_avorto"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="@string/aborto"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_macho" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdreproduccion_muerto"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text="@string/muerto"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rdreproduccion_macho" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tv_part_spinner_droga"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8sp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="@string/enter_insimos"
+                android:textColor="@color/negro"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rd_reproduccicion" />
+
+            <Spinner
+                android:id="@+id/spinner_parto_droga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8sp"
+                android:prompt="@string/enter_insimos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_part_spinner_droga"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_cant_drog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_parto_droga">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_anml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_syringe_small" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_cant_droga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_cant_droga"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_trat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_cant_drog">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_trat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_ejecucion" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_trat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_trat"
+                    android:inputType="textMultiLine"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_obs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_trat">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_analizar" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_obs"
+                    android:inputType="textMultiLine"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_part_anml_raza"
+                style="@style/EditText"
+                android:layout_margin="8sp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:hint="@string/enter_razas_anml"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_obs" />
+
+            <Spinner
+                android:id="@+id/spinner_parto_eleccion_raza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8sp"
+                android:prompt="@string/enter_razas_anml"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_part_anml_raza"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_peso_cria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_parto_eleccion_raza">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_peso_cria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_bull_head_small" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_peso_nacimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_peso_anml"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_n_padre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_peso_cria">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_bull_head_small" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_n_padre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_name_father_anml"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_numero_hijo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_n_padre">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_numero_hijo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_numero_hijo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_number_cria"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_nombre_ternera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_numero_hijo">
+
+                <ImageView
+                    android:id="@+id/img_r_nombre_ternera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion" />
+
+                <EditText
+                    android:id="@+id/edt_r_nombre_ternera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_nombre_ternera"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_r_parto_numero_parto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_parto_nombre_ternera">
+
+                <ImageView
+                    android:id="@+id/img_r_parto_numero_parto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_cara_vaca_peque" />
+
+                <EditText
+                    android:id="@+id/edt_r_parto_numero_parto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_number_part"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

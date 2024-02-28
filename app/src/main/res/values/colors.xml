@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimarDa">#0DD255</color>
+    <color name="acul_oscuro">#131DE8</color>
+    <color name="colorPrimr">#88574B</color>
+    <color name="colorPrmaryDark">#411999</color>
+    <color name="colorPrmaryk">#66566B</color>
+    <color name="colorPrimar">#FFC6B5</color>
+    <color name="gris">#E8F7FBF9</color>
+
+    <color name="gris_oscuro">#86B5AFAF</color>
+    <color name="verde_claro">#B7FFA8</color>
+    <color name="coorAccent">#367981</color>
+    <color name="cafe_oscuro">#965F33</color>
+    <color name="verde">#34978D</color>
+    <color name="lightGray">#F5F5FB</color>
+    <color name="fucsia_cesde_oscuro">#a21e3d</color>
+
+    <color name="verde_oscuro">#0C4741</color>
+    <color name="azul_agua">#2196F3</color>
+    <color name="negro">#101112</color>
+    <color name="azul">#3F51B5</color>
+
+    <color name="rosado">#F05488</color>
+    <color name="amarillo">#FFE903</color>
+    <color name="rojo">#FF0A0E</color>
+    <color name="cafe">#5E4D36</color>
+    <color name="cafe_claro">#A67515</color>
+
+
+
+
+</resources>

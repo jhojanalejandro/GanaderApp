@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@+id/nav_home_p_aniaml_m">
+
+<fragment
+    android:id="@+id/nav_home_p_aniaml_m"
+    android:name="com.agroapp.proyecto_esmeralda.views.perfil_animal_macho.Inicio_perfil_macho_Fragment"
+    android:label="@string/menu_inicio_p_animal_m"
+    tools:layout="@layout/fragment_home_p_animal_m" />
+
+<fragment
+    android:id="@+id/nav_gallery_p_aniaml_m"
+    android:name="com.agroapp.proyecto_esmeralda.views.perfil_animal_macho.Deseas_View_Fragment_p_animal_m"
+    android:label="@string/menu_enfermedad_p_animal_m"
+    tools:layout="@layout/deseas_view_fragment_p_animal_m" />
+
+<fragment
+    android:id="@+id/nav_slideshow_p_aniaml_m"
+    android:name="com.agroapp.proyecto_esmeralda.views.perfil_animal_macho.VacunacionFragment"
+    android:label="@string/menu_vacunacion_p_animal_m"
+    tools:layout="@layout/fragment_slideshow_p_animal_m" />
+
+<fragment
+    android:id="@+id/nav_tools_p_aniaml_m"
+    android:name="com.agroapp.proyecto_esmeralda.views.perfil_animal_macho.Produccion_animal"
+    android:label="@string/menu_tools_p_animal_m"
+    tools:layout="@layout/fragment_tools_p_animal_m" />
+
+<!--<fragment-->
+<!--    android:id="@+id/nav_share_p_aniaml_m"-->
+<!--    android:name="com.citrigan.perfil_animal_m.share.ShareFragment"-->
+<!--    android:label="@string/menu_share_p_animal_m"-->
+<!--    tools:layout="@layout/fragment_share_p_animal_m" />-->
+
+<!--<fragment-->
+<!--    android:id="@+id/nav_send_p_aniaml_m"-->
+<!--    android:name="com.citrigan.perfil_animal_m.send.SendFragment"-->
+<!--    android:label="@string/menu_send_p_animal_m"-->
+<!--    tools:layout="@layout/fragment_send_p_animal_m" />-->
+</navigation>

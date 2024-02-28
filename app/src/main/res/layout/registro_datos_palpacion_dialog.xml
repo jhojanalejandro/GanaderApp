@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginTop="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_palma" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_palpacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8sp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@color/lightGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edt_palp_f"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:hint=" Fecha Palpacion" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_palp_r_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:background="#00000000"
+                    app:srcCompat="@drawable/ic_date_small"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/rd_r_palpacion"
+                android:layout_width="245dp"
+                android:layout_height="159dp"
+                android:layout_marginTop="8sp"
+                android:background="@color/lightGray"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_palpacion"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/result_pal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:gravity="center"
+                    android:text="OPCIONES"
+                    android:textColor="@color/negro"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rd_momia"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Rechequeo"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rd_r_palpacion" />
+
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rd_adelanto"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=" Preñada"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rd_r_palpacion" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rd_vacia"
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/appbar_margin"
+                    android:text=" Vacia"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rd_r_palpacion" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/edt_palp_serv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="Servicios"
+                android:textColor="@color/negro"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rd_r_palpacion" />
+
+
+            <Spinner
+                android:id="@+id/spinner_palp_f_servicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8sp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_palp_serv"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/ln_palpacion_f_noti"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24sp"
+                android:layout_marginEnd="24sp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@color/lightGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_palp_f_servicio"
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/edt_palp_f_noti"
+                    style="@style/EditText"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
+                    android:hint=" Fecha Adelanto " />
+
+                <ImageButton
+                    android:id="@+id/ibtn_palp_r_date_noti"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="9"
+                    android:background="#00000000"
+                    app:srcCompat="@drawable/ic_date_small"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_palp_event_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8sp"
+                android:background="@color/lightGray"
+                android:ems="10"
+                android:fontFamily="@font/raleway_semibold"
+                android:gravity="center"
+                android:text="@string/enter_drog"
+                android:textColor="@color/negro"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_palpacion_f_noti" />
+
+
+            <Spinner
+                android:id="@+id/spinner_palp_drogra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_palp_event_spinner"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_palp_cant_drog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_palp_drogra">
+
+                <ImageView
+                    android:id="@+id/img_r_palp_anml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_syringe_small" />
+
+                <EditText
+                    android:id="@+id/edt_r_palp_cant_droga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_cant_droga"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_palp_trat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_palp_cant_drog">
+
+                <ImageView
+                    android:id="@+id/img_r_palp_trat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_ejecucion" />
+
+                <EditText
+                    android:id="@+id/edt_r_palp_trat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_trat"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_palp_obs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_palp_trat">
+
+                <ImageView
+                    android:id="@+id/img_r_palp_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_analizar" />
+
+                <EditText
+                    android:id="@+id/edt_r_palp_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_obs"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_r_palp_vet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="8sp"
+                android:background="@drawable/input_bg"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_r_palp_obs">
+
+                <ImageView
+                    android:id="@+id/img_r_palp_vet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="25"
+                    app:srcCompat="@drawable/ic_veterinario" />
+
+                <EditText
+                    android:id="@+id/edt_r_palp_n_vet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:background="@color/lightGray"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:hint="@string/enter_name_vet"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

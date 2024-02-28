@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_p_animal_m"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="38dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_toro_mitad" />
+
+            <TextView
+                android:id="@+id/tv_d_animal_m_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/enter_name_anml"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_p_animal_m" />
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_chapeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_d_animal_m_nombre">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="IDENTIFICADOR"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_identificador"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_tarjeta_de_identificacion_big" />
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_chapeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="Chapeta"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_f_nacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_4"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ln_d_animal_m_chapeta"
+                app:layout_constraintTop_toBottomOf="@+id/tv_d_animal_m_nombre">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="FECHA NACIMIENTO"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_f_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_f_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="fecha"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_etapa_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/cuadro_redondo"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_chapeta">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+
+                    android:padding="@dimen/margin_8"
+                    android:text="ETAPA ANIMAL"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_etapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_etapa" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_etapa_tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="etapa"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_raza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ln_d_animal_m_etapa_tipo"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_n_padre">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="RAZA ANIMAL"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                  />
+
+                <ImageView
+                    android:id="@+id/img_raza"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/ic_razas" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_raza"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="raza"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_n_madre">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="GENERO ANIMAL"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                     />
+
+                <ImageView
+                    android:id="@+id/img_genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/ic_simbolo_de_genero" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_genero_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="GENERO"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_n_madre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/cuadro_redondo"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.013"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_etapa_tipo">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="NOMBRE MADRE"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                     />
+
+                <ImageView
+                    android:id="@+id/img_n_madre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/ic_cara_vaca" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_n_madre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/madre"
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_n_padre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.655"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ln_d_animal_m_n_madre"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_estado">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="NOMBRE PADRE"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_n_padre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/ic_cabeza_de_toro_frontal" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_n_padre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="padre"
+                    android:textColor="@color/azul"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ln_d_animal_m_etapa_tipo"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_f_nacimiento">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_8"
+                    android:text="ESTADO ANIMAL"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_estar" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_estado_animal_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="estado "
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_raza">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="PESO ACTUAL"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                     />
+
+                <ImageView
+                    android:id="@+id/img_peso_"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_kilo_big" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="Peso "
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_d_animal_m_precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/cuadro_redondo"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_8"
+                android:weightSum="10"
+                app:layout_constraintEnd_toStartOf="@+id/ln_d_animal_m_raza"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_genero">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="6"
+                    android:gravity="center_horizontal"
+                    android:text="PRECIO DE COMPRA"
+                    android:textColor="@color/negro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_n_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    app:srcCompat="@drawable/ic_coins" />
+
+
+                <TextView
+                    android:id="@+id/tv_d_animal_m_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:paddingStart="15sp"
+                    android:paddingLeft="15sp"
+                    android:text="Precio "
+                    android:textColor="@color/azul"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_subir_img_animal_m"
+                android:layout_width="232dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/borde_azul_"
+                android:text="Subir Foto ANIMAL"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.586"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_m_precio"
+                app:layout_constraintVertical_bias="0.03"
+                tools:visibility="visible" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

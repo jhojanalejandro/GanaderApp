@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    >
+
+    <ImageView
+        android:id="@+id/imagen_user_view_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="65sp"
+        android:layout_marginStart="4sp"
+        android:background="@drawable/ic_usuario"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="2sp">
+
+            <TextView
+                android:id="@+id/tv_item_user_name"
+                android:layout_weight="4"
+                android:padding="@dimen/margin_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/azul"
+                android:text="@string/name"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:paddingTop="@dimen/margin_4"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="@string/enter_cedula"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_item_user_cedula"
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/margin_4"
+                android:textColor="@color/azul"
+                android:text="@string/enter_cedula"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_margin="2sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+          >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="6"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="TIPO" />
+
+
+            <TextView
+                android:id="@+id/tv_item_user_tipo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/margin_4"
+                android:textColor="@color/azul"
+                android:layout_weight="4"
+                android:text="@string/tipo_usuario"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:text="PHONE"
+                android:paddingTop="@dimen/margin_4"
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_user_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/margin_4"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:textColor="@color/azul"
+                android:text="TELEFONO"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

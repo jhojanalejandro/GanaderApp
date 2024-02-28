@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_p_prop"
+            android:icon="@drawable/ic_deudor"
+            android:title="@string/menu_home_p_prop" />
+        <item
+            android:id="@+id/nav_gallery_p_prop"
+            android:icon="@drawable/ic_earnings"
+            android:title="@string/menu_gallery_p_prop" />
+        <item
+            android:id="@+id/nav_slideshow_p_prop"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow_p_prop" />
+        <item
+            android:id="@+id/nav_tools_p_prop"
+            android:icon="@drawable/ic_graphic"
+            android:title="@string/menu_analizis_p_prop" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share_p_prop"
+                android:icon="@drawable/ic_user"
+                android:title="@string/menu_share_p_prop" />
+            <item
+                android:id="@+id/nav_send_p_prop"
+                android:icon="@drawable/ic_cow_silhouette"
+                android:title="@string/menu_send_p_prop" />
+        </menu>
+    </item>
+
+</menu>

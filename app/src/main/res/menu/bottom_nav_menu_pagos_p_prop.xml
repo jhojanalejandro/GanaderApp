@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_prod_alta_medida"
+        android:icon="@drawable/ic_toro_mitad"
+        android:title="@string/produccion_alta_medida" />
+
+    <item
+        android:id="@+id/navigation_prod_baja_medida"
+        android:icon="@drawable/ic_cow_silhouette"
+        android:title="@string/produccion_baja_medida" />
+    <item
+        android:id="@+id/navigation_prod_alta_pesaje"
+        android:icon="@drawable/ic_signo_de_vista_lateral_de_toro_tauro"
+        android:title="@string/produccion_alta_pesaje" />
+
+    <item
+        android:id="@+id/navigation_prod_baja_pesaje"
+        android:icon="@drawable/ic_cabeza_de_toro_frontal"
+        android:title="@string/produccion_baja_pesaje" />
+
+</menu>

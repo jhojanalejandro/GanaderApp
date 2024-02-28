@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".views.manejo_animal_view.Detalle_enfermedad"
+    tools:showIn="@layout/activity_detalle_enfermedad"
+    android:background="@drawable/ic_logo_fondo">
+
+
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/vaca_cara2" />
+
+    <TextView
+        android:id="@+id/tv_d_efmd_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_name_anml"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+    <LinearLayout
+        android:id="@+id/ln_d_efmd_f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_margin"
+        android:background="@drawable/cuadro_redondo"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_d_efmd_nombre">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_weight="6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="6"
+                android:text="FECHA REGISTRO"
+                android:textSize="18sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/ic_calendar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_d_efmd_f"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:hint="@string/fecha"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_d_calor_n_toro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_margin"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/cuadro_redondo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_efmd_f">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/enter_event"
+            android:padding="@dimen/margin_12"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_d_efmd_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/enter_event"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_d_efmd_droga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_margin"
+        android:background="@drawable/cuadro_redondo"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_8"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_d_calor_n_toro">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="DROGA"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/ic_medicamento" />
+
+
+        <TextView
+            android:id="@+id/tv_d_efmd_droga"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:hint="Droga"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_d_animal_cant_partos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cuadro_redondo"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_8"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ln_d_efmd_droga"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_calor_n_toro">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="CANTIDAD"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/ic_syringe" />
+
+
+        <TextView
+            android:id="@+id/tv_d_efmd_cant_droga"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/cero"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_d_calor_obs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6sp"
+        android:background="@drawable/cuadro_redondo"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_animal_cant_partos">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_weight="6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Obseraciones"
+                android:textSize="18sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_obs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_microscopio" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_d_efmd_obs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/enter_obs"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_d_efmd_trat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/cuadro_redondo"
+        android:layout_marginTop="@dimen/appbar_margin"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_calor_obs">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/enter_trat"
+          android:padding="@dimen/margin_12"
+            android:textSize="18sp"
+            android:textColor="@color/negro"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_d_efmd_trat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity=""
+            android:hint="@string/enter_trat"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_d_efmd_vet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/cuadro_redondo"
+        android:layout_marginTop="8dp"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_efmd_trat">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_weight="6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/enter_name_vet"
+                android:textSize="18sp"
+                android:textColor="@color/negro"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_vet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:srcCompat="@drawable/ic_veterinario" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_d_efmd_vet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity=""
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/enter_name_vet"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_d_efmd_tipo_vacuna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_8"
+        android:background="@drawable/cuadro_redondo"
+        android:weightSum="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_d_efmd_vet">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="@string/tipo_vacunacion"
+            android:padding="@dimen/margin_12"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_d_efmd_tipo_vacuna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity=""
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:hint="@string/tipo_vacunacion"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

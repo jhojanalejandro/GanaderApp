@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_logo_fondo"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ln_descripcion_p_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/appbar_margin"
+        android:layout_marginEnd="8sp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/ic_add" />
+
+        <EditText
+            android:id="@+id/edt_descrip_gasto_ganancia_adicional_p_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="@string/enter_descripcion"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_cant_gasto_ganancia_p_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/appbar_margin"
+        android:layout_marginEnd="8sp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_descripcion_p_admin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/ic_dollar_sign" />
+
+        <EditText
+            android:id="@+id/edt_cant_gasto_ganancia_adicional_p_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="@string/cantidad"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_leche_terneras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_cant_gasto_ganancia_p_admin">
+
+        <ImageView
+            android:id="@+id/img_r_ins_anml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/ic_nota_small" />
+
+        <EditText
+            android:id="@+id/edt_gasto_ganancia_obs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="@string/enter_obs"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_logo_fondo">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_fecha_leche_diaria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edt_fecha_produccion_diaria"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint=" Fecha "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibtn_anml_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            app:srcCompat="@drawable/ic_date_small"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_leche_producida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_fecha_leche_diaria">
+
+        <ImageView
+            android:id="@+id/img_leche_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/ic_ordeno" />
+
+        <EditText
+            android:id="@+id/edt_media_leche_cant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="@string/enter_cant_leche"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_leche_producida_obs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:background="@drawable/input_bg"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_leche_producida">
+
+        <ImageView
+            android:id="@+id/img_leche_pro_obs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/ic_observacion" />
+
+        <EditText
+            android:id="@+id/edt_leche_producida_obs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:fontFamily="@font/raleway_semibold"
+            android:hint="@string/enter_obs"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

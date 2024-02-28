@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#A67515"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_cara_vaca"
+        android:bottom="15dp"
+        android:left="15dp"
+        android:right="15dp"
+        android:top="15dp"/>
+    <item
+        android:drawable="@drawable/ic_retrato_de_cerdo"
+        android:bottom="40sp"
+        android:left="60sp"
+        android:right="60sp"
+        android:top="30sp"/>
+</layer-list>

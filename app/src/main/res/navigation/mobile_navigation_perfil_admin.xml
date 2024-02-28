@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_datos_finca_p_admin">
+    <fragment
+        android:id="@+id/nav_datos_finca_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.Datos_finca_Fragment_p_admin"
+        android:label="@string/menu_gallery_p_admin"
+        tools:layout="@layout/fragment_datos_finca_p_admin" />
+
+
+    <fragment
+        android:id="@+id/nav_estadisticas_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.EstadisticasFragment_p_admin"
+        android:label="@string/menu_slideshow_p_admin"
+        tools:layout="@layout/fragment_gasto_ganancia_p_admin" />
+
+
+    <fragment
+        android:id="@+id/nav_promedio_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.Promedio_ProduccionFragment_p_admin"
+        android:label="@string/menu_tools_p_admin"
+        tools:layout="@layout/fragment_promedio_p_admin" />
+
+    <fragment
+        android:id="@+id/nav_personal_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.Personal_Fragment_View_p_admin"
+        android:label="@string/menu_share_p_admin"
+        tools:layout="@layout/fragment_empleados_p_admin" />
+
+    <fragment
+        android:id="@+id/nav_lista_general_animales_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.General_baseAnimalFragment_p_admin"
+        android:label="@string/menu_lista_animales"
+        tools:layout="@layout/fragment_lista_general_animales" />
+
+    <fragment
+        android:id="@+id/nav_produccion_diaria_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.Produccion_animal_Fragment_p_admin"
+        android:label="@string/menu_produccion_diaria_p_admin"
+        tools:layout="@layout/produccion_diaria" />
+
+    <fragment
+        android:id="@+id/nav_palpacion_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.PalpacionFragment_p_admin"
+        android:label="@string/menu_tareas_p_admin"
+        tools:layout="@layout/concentrado_fragment_view" />
+
+    <fragment
+        android:id="@+id/nav_analizis_p_admin"
+        android:name="com.agroapp.proyecto_esmeralda.views.perfil_admin_views.AnalizisFragment_p_admin"
+        android:label="@string/menu_analizis_p_admin"
+        tools:layout="@layout/fragment_analizis_p_admin" />
+</navigation>

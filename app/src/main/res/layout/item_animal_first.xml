@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imagen_animal_view_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_4"
+        android:layout_marginStart="5dp"
+        android:layout_weight="6"
+        android:src="@mipmap/ic_ln" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/tv_nombre_animal_view_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="ID:"
+                android:textColor="@color/azul" />
+
+            <TextView
+                android:id="@+id/tv_numero_animal_view_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="NUMERO"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/enter_genero"
+                android:textColor="@color/azul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_genero_animal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="@string/enter_genero"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/enter_raza_anml"
+                android:textColor="@color/azul" />
+
+
+            <TextView
+                android:id="@+id/tv_item_raza_animal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="@string/enter_raza_anml"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

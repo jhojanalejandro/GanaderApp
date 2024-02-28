@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.proyecto_colombianita1.activities.MainActivity" >
+    <item
+        android:title="menu"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="always"
+        android:orderInCategory="100">
+        <menu>
+
+            <item android:id="@+id/action_manual"
+                android:title="@string/action_manual"
+                android:icon="@drawable/ic_nota"
+                android:orderInCategory="100"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_SALIR_main"
+                android:title="Cerrar La Aplicacion"
+                android:icon="@drawable/ic_cerrar_sesion"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                tools:ignore="HardcodedText" />
+        </menu>
+    </item>
+
+
+
+</menu>

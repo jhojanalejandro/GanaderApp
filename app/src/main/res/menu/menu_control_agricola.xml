@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.proyecto_colombianita1.activities.MainActivity"
+    >
+
+    <item
+        android:icon="@drawable/ic_menu"
+        android:orderInCategory="100"
+        android:title="@string/menu_main"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction">
+
+        <menu>
+
+            <item android:id="@+id/action_menu_adm_agro"
+                android:orderInCategory="100"
+                android:title="@string/action_menu_p_admin"
+                android:icon="@drawable/ic_administrador_web"
+                app:showAsAction="never" />
+
+
+            <item android:id="@+id/action_lista_animales_produccion_c_agricola"
+                android:orderInCategory="100"
+                android:title="@string/action_lista_lote_lev"
+                android:icon="@drawable/ic_ir"
+                app:showAsAction="never" />
+
+            <item
+                android:title="@string/quejas_reclamos"
+                android:icon="@drawable/ic_pujar"
+                android:id="@+id/action_quejas_reclamos"
+                android:orderInCategory="100"
+                app:showAsAction="always"
+                />
+
+            <item
+                android:title="@string/cerrar_sesion"
+                android:icon="@drawable/ic_salida"
+                android:id="@+id/action_cerrarcesion_control_agricola"
+                android:orderInCategory="100"
+                app:showAsAction="always"
+                />
+
+
+        </menu>
+
+    </item>
+
+
+
+
+</menu>
